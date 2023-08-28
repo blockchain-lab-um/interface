@@ -24,7 +24,9 @@ type PolygonIDGuideLabelProps = {
 export default function PolygonIDGuideLabel({ children }: PolygonIDGuideLabelProps) {
   return (
     <Label color="grey">
-      <Title marginRight="5px">{children}</Title>
+      <Title marginRight="5px" fontWeight={545}>
+        {children}
+      </Title>
     </Label>
   )
 }

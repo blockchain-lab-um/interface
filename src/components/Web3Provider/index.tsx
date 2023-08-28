@@ -1,3 +1,4 @@
+import { enableMasca, isError } from '@blockchain-lab-um/masca-connector'
 import { CustomUserProperties, InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
 import { useWeb3React, Web3ReactHooks, Web3ReactProvider } from '@web3-react/core'
 import { Connector } from '@web3-react/types'
@@ -10,6 +11,7 @@ import useEagerlyConnect from 'hooks/useEagerlyConnect'
 import usePrevious from 'hooks/usePrevious'
 import { ReactNode, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { useMascaStore } from 'state/masca/mascaStore'
 import { useConnectedWallets } from 'state/wallets/hooks'
 import { getCurrentPageFromLocation } from 'utils/urlRoutes'
 import { getWalletMeta } from 'utils/walletMeta'
@@ -30,6 +32,11 @@ export default function Web3Provider({ children }: { children: ReactNode }) {
 function Updater() {
   const { account, chainId, connector, provider } = useWeb3React()
   const { pathname } = useLocation()
+  const { mascaApi, setMascaApi, setEnabled } = useMascaStore((state) => ({
+    mascaApi: state.mascaApi,
+    setMascaApi: state.changeMascaApi,
+    setEnabled: state.changeIsEnabled,
+  }))
   const currentPage = getCurrentPageFromLocation(pathname)
 
   // Trace RPC calls (for debugging).
@@ -47,6 +54,31 @@ function Updater() {
       networkProvider?.off('debug', trace)
     }
   }, [networkProvider, provider, shouldTrace])
+
+  useEffect(() => {
+    const initMasca = async () => {
+      if (!account) return
+      if (mascaApi) {
+        await mascaApi?.setCurrentAccount({ currentAccount: (account as string).toLowerCase() })
+        setMascaApi(mascaApi)
+        setEnabled(true)
+        return
+      }
+      const mascaResult = await enableMasca((account as string).toLowerCase(), {
+        snapId: 'npm:@blockchain-lab-um/masca',
+        version: '1.0.0-beta.0',
+        supportedMethods: ['did:polygonid'],
+      })
+      if (isError(mascaResult)) {
+        throw new Error(mascaResult.error)
+      }
+      const newMascaApi = mascaResult.data.getMascaApi()
+      await newMascaApi?.setCurrentAccount({ currentAccount: account as string })
+      setMascaApi(newMascaApi)
+      setEnabled(true)
+    }
+    initMasca()
+  }, [account, mascaApi, setEnabled, setMascaApi])
 
   // Send analytics events when the active account changes.
   const previousAccount = usePrevious(account)

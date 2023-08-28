@@ -1,6 +1,5 @@
 import Modal from 'components/Modal'
-import QRCodeHandler from 'components/QRCodeHandler'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 
 import PolygonIDGuideLabel from './PolygonIDGuideLabel'
@@ -15,31 +14,27 @@ const Container = styled.div`
 
 interface AuthenticationModalProps {
   onCancel: () => void
-  onSuccess: () => void
 }
 
-export default function AuthenticationModal({ onSuccess, onCancel }: AuthenticationModalProps) {
-  const [proofRequest, setProofRequest] = useState<string>('')
-  const [showQr, setShowQr] = useState<boolean>(false)
-  const kycEndpoint = 'https://verifier-v2.polygonid.me/api/sign-in?type=kycSig'
-  useEffect(() => {
-    const getProofRequest = async () => {
-      const response = await fetch(kycEndpoint)
-      const data = await response.json()
-      setProofRequest(JSON.stringify(data))
-      setShowQr(true)
+export default function AuthenticationModal({ onCancel }: AuthenticationModalProps) {
+  const [loadingLabel, setLoadingLabel] = useState('Waiting for approved Authorization Request ')
+  // timeout to add a dot to a loading label, one dot each second and when it reaches 3 dots, it resets to 0
+  setTimeout(() => {
+    if (loadingLabel === 'Waiting for approved Authorization Request ') {
+      setLoadingLabel('Waiting for approved Authorization Request .')
+    } else if (loadingLabel === 'Waiting for approved Authorization Request .') {
+      setLoadingLabel('Waiting for approved Authorization Request ..')
+    } else if (loadingLabel === 'Waiting for approved Authorization Request ..') {
+      setLoadingLabel('Waiting for approved Authorization Request ...')
+    } else {
+      setLoadingLabel('Waiting for approved Authorization Request ')
     }
-    getProofRequest()
-  }, [])
+  }, 700)
 
   return (
     <Modal isOpen onDismiss={onCancel}>
       <Container>
-        {showQr && <QRCodeHandler data={proofRequest} onSuccess={onSuccess} />}
-        <PolygonIDGuideLabel>
-          Please scan this QR code using <a href="https://beta.masca.io">masca.io</a> QR Scanner and carry out the
-          Authorization Flow (Required credential: KYCAgeCredential).
-        </PolygonIDGuideLabel>
+        <PolygonIDGuideLabel>{loadingLabel}</PolygonIDGuideLabel>
       </Container>
     </Modal>
   )

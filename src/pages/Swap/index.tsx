@@ -1,3 +1,4 @@
+import { isError } from '@blockchain-lab-um/masca-connector'
 import { Trans } from '@lingui/macro'
 import {
   BrowserEvent,
@@ -38,6 +39,7 @@ import { useIsSwapUnsupported } from 'hooks/useIsSwapUnsupported'
 import { useMaxAmountIn } from 'hooks/useMaxAmountIn'
 import usePermit2Allowance, { AllowanceState } from 'hooks/usePermit2Allowance'
 import usePrevious from 'hooks/usePrevious'
+import useSelectChain from 'hooks/useSelectChain'
 import { SwapResult, useSwapCallback } from 'hooks/useSwapCallback'
 import { useSwitchChain } from 'hooks/useSwitchChain'
 import { useUSDPrice } from 'hooks/useUSDPrice'
@@ -184,6 +186,7 @@ export function Swap({
   disableTokenInputs?: boolean
 }) {
   const { account, chainId: connectedChainId, connector } = useWeb3React()
+  const selectChain = useSelectChain()
   const trace = useTrace()
 
   // token warning stuff
@@ -201,9 +204,10 @@ export function Swap({
   const [dismissTokenWarning, setDismissTokenWarning] = useState<boolean>(false)
   const [showPriceImpactModal, setShowPriceImpactModal] = useState<boolean>(false)
   const [showAuthenticationModal, setShowAuthenticationModal] = useState<boolean>(false)
-  const { isAuthenticated, setIsAuthenticated } = useMascaStore((state) => ({
+  const { isAuthenticated, setIsAuthenticated, mascaApi } = useMascaStore((state) => ({
     isAuthenticated: state.isAuthenticated,
     setIsAuthenticated: state.changeIsAuthenticated,
+    mascaApi: state.mascaApi,
   }))
 
   const urlLoadedTokens: Token[] = useMemo(
@@ -430,9 +434,56 @@ export function Swap({
     })
   }, [trade])
 
-  const handleAuthentication = useCallback(() => {
+  const handleAuthorization = useCallback(async () => {
     setShowAuthenticationModal(true)
-  }, [])
+    const kycEndpoint = 'https://verifier-v2.polygonid.me/api/sign-in?type=kycSig'
+    const response = await fetch(kycEndpoint)
+    const authorizationRequestObject = await response.json()
+
+    if (!mascaApi) throw new Error('Masca API is not defined')
+    const selectedMethodResult = await mascaApi.getSelectedMethod()
+    if (isError(selectedMethodResult)) {
+      throw new Error(selectedMethodResult.error)
+    }
+    if (selectedMethodResult.data !== 'did:polygonid') {
+      await mascaApi?.switchDIDMethod('did:polygonid')
+      // TODO: optional error handling with isError can come here, not neccessary-
+      // due to only supported method is did:polygonid
+    }
+    await selectChain(ChainId.POLYGON_MUMBAI)
+    const authorizationRequest = JSON.stringify(authorizationRequestObject)
+    const authResult = await mascaApi?.handleAuthorizationRequest({
+      authorizationRequest,
+    })
+    if (!authResult.success) {
+      console.error(authResult.error)
+      setShowAuthenticationModal(false)
+      return
+    }
+
+    const callbackUrl = new URL(authorizationRequestObject.body.callbackUrl)
+    const sessionId = callbackUrl.searchParams.get('sessionId')
+    if (sessionId) {
+      const interval = setInterval(async () => {
+        try {
+          const response = await fetch(`https://verifier-v2.polygonid.me/api/status?id=${sessionId}`)
+          console.log(`Response status: ${response.status}`)
+          if (response.status === 200) {
+            clearInterval(interval)
+            setIsAuthenticated(true)
+            setShowAuthenticationModal(false)
+          }
+        } catch (error) {
+          setIsAuthenticated(false)
+          clearInterval(interval)
+        }
+      }, 3000)
+      return () => {
+        clearInterval(interval)
+      }
+    }
+    return
+  }, [mascaApi, selectChain, setIsAuthenticated])
 
   const handleSwap = useCallback(() => {
     if (!swapCallback) {
@@ -579,15 +630,7 @@ export function Swap({
         showCancel={true}
       />
       <SwapHeader trade={trade} autoSlippage={autoSlippage} chainId={chainId} />
-      {showAuthenticationModal && (
-        <AuthenticationModal
-          onSuccess={() => {
-            setIsAuthenticated(true)
-            setShowAuthenticationModal(false)
-          }}
-          onCancel={handleDismissAuthenticationModal}
-        />
-      )}
+      {showAuthenticationModal && <AuthenticationModal onCancel={handleDismissAuthenticationModal} />}
       {trade && showConfirm && allowance.state !== AllowanceState.LOADING && (
         <ConfirmSwapModal
           trade={trade}
@@ -775,7 +818,7 @@ export function Swap({
                     ? showPriceImpactWarning
                       ? setShowPriceImpactModal(true)
                       : handleContinueToReview()
-                    : handleAuthentication()
+                    : handleAuthorization()
                 }}
                 id="swap-button"
                 data-testid="swap-button"
@@ -786,11 +829,11 @@ export function Swap({
                   {swapInputError ? (
                     swapInputError
                   ) : routeIsSyncing || routeIsLoading ? (
-                    <Trans>{isAuthenticated ? 'Swap' : 'Authenticate'}</Trans>
+                    <Trans>{isAuthenticated ? 'Swap' : 'Authorize'}</Trans>
                   ) : priceImpactSeverity > 2 ? (
-                    <Trans>{isAuthenticated ? 'Swap Anyway' : 'Authenticate'}</Trans>
+                    <Trans>{isAuthenticated ? 'Swap Anyway' : 'Authorize'}</Trans>
                   ) : (
-                    <Trans>{isAuthenticated ? 'Swap' : 'Authenticate'}</Trans>
+                    <Trans>{isAuthenticated ? 'Swap' : 'Authorize'}</Trans>
                   )}
                 </Text>
               </ButtonError>

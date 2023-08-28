@@ -1,4 +1,4 @@
-import { enableMasca, isError } from '@blockchain-lab-um/masca-connector'
+import { isError } from '@blockchain-lab-um/masca-connector'
 import { ArrowPathIcon } from '@heroicons/react/24/solid'
 import { Trans } from '@lingui/macro'
 import { BrowserEvent, InterfaceElementName, InterfaceEventName, SharedEventName } from '@uniswap/analytics-events'
@@ -233,44 +233,20 @@ export default function AuthenticatedHeader({ account, openSettings }: { account
     closeModal()
   }, [clearCollectionFilters, closeModal, navigate, resetSellAssets, setSellPageState, toggleWalletDrawer])
 
-  const { setEnabled, mascaEnabled, mascaApi, setMascaApi, credentials, setCredentials } = useMascaStore((state) => ({
+  const { mascaEnabled, mascaApi, credentials, setCredentials } = useMascaStore((state) => ({
     mascaApi: state.mascaApi,
     mascaEnabled: state.isEnabled,
-    setEnabled: state.changeIsEnabled,
-    setMascaApi: state.changeMascaApi,
     credentials: state.vcs,
     setCredentials: state.changeVcs,
   }))
 
-  const handleEnableMasca = useCallback(async () => {
-    const mascaResult = await enableMasca(account, {
-      snapId: 'npm:@blockchain-lab-um/masca',
-      version: '1.0.0-beta.0',
-    })
-    if (isError(mascaResult)) {
-      // FIXME: This error is shown as [Object object]
-      throw new Error(mascaResult.error)
-    }
-    const mascaApi = mascaResult.data.getMascaApi()
-    setMascaApi(mascaApi)
-    setEnabled(true)
-    setQuerying(true)
-    const credentialsResult = await mascaApi.queryCredentials()
-    if (!isError(credentialsResult)) setCredentials(credentialsResult.data)
-    setQuerying(false)
-  }, [account, setCredentials, setEnabled, setMascaApi])
-
   const handleQueryCredentials = useCallback(async () => {
     setQuerying(true)
-    if (!mascaApi) {
-      await handleEnableMasca()
-      setQuerying(false)
-      return
-    }
+    if (!mascaApi) return
     const credentialsResult = await mascaApi.queryCredentials()
     if (!isError(credentialsResult)) setCredentials(credentialsResult.data)
     setQuerying(false)
-  }, [handleEnableMasca, mascaApi, setCredentials])
+  }, [mascaApi, setCredentials])
 
   const openFiatOnrampModal = useOpenModal(ApplicationModal.FIAT_ONRAMP)
   const openFoRModalWithAnalytics = useCallback(() => {
@@ -390,14 +366,6 @@ export default function AuthenticatedHeader({ account, openSettings }: { account
             <LoadingBubble height="16px" width="100px" margin="4px 0 20px 0" />
           </Column>
         )}
-        <HeaderButton
-          size={ButtonSize.medium}
-          disabled={mascaEnabled}
-          emphasis={ButtonEmphasis.medium}
-          onClick={handleEnableMasca}
-        >
-          <Trans>{mascaEnabled ? 'Masca Enabled' : 'Enable Masca'}</Trans>
-        </HeaderButton>
 
         {!shouldDisableNFTRoutes && (
           <HeaderButton
