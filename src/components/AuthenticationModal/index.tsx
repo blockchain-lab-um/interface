@@ -17,17 +17,17 @@ interface AuthenticationModalProps {
 }
 
 export default function AuthenticationModal({ onCancel }: AuthenticationModalProps) {
-  const [loadingLabel, setLoadingLabel] = useState('Waiting for approved Authorization Request ')
+  const [loadingLabel, setLoadingLabel] = useState('Waiting for confirmed identity verification ')
   // timeout to add a dot to a loading label, one dot each second and when it reaches 3 dots, it resets to 0
   setTimeout(() => {
-    if (loadingLabel === 'Waiting for approved Authorization Request ') {
-      setLoadingLabel('Waiting for approved Authorization Request .')
-    } else if (loadingLabel === 'Waiting for approved Authorization Request .') {
-      setLoadingLabel('Waiting for approved Authorization Request ..')
-    } else if (loadingLabel === 'Waiting for approved Authorization Request ..') {
-      setLoadingLabel('Waiting for approved Authorization Request ...')
+    if (loadingLabel === 'Waiting for confirmed identity verification ') {
+      setLoadingLabel('Waiting for confirmed identity verification .')
+    } else if (loadingLabel === 'Waiting for confirmed identity verification .') {
+      setLoadingLabel('Waiting for confirmed identity verification ..')
+    } else if (loadingLabel === 'Waiting for confirmed identity verification ..') {
+      setLoadingLabel('Waiting for confirmed identity verification ...')
     } else {
-      setLoadingLabel('Waiting for approved Authorization Request ')
+      setLoadingLabel('Waiting for confirmed identity verification ')
     }
   }, 700)
 

@@ -829,11 +829,11 @@ export function Swap({
                   {swapInputError ? (
                     swapInputError
                   ) : routeIsSyncing || routeIsLoading ? (
-                    <Trans>{isAuthenticated ? 'Swap' : 'Authorize'}</Trans>
+                    <Trans>{isAuthenticated ? 'Swap' : 'Authorize with Polygon ID'}</Trans>
                   ) : priceImpactSeverity > 2 ? (
-                    <Trans>{isAuthenticated ? 'Swap Anyway' : 'Authorize'}</Trans>
+                    <Trans>{isAuthenticated ? 'Swap Anyway' : 'Authorize with Polygon ID'}</Trans>
                   ) : (
-                    <Trans>{isAuthenticated ? 'Swap' : 'Authorize'}</Trans>
+                    <Trans>{isAuthenticated ? 'Swap' : 'Authorize with Polygon ID'}</Trans>
                   )}
                 </Text>
               </ButtonError>
