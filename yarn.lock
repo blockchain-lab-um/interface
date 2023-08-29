@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@0xpolygonid/js-sdk@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@0xpolygonid/js-sdk/-/js-sdk-1.0.2.tgz#ea1a3930a394155b767f76e7dc0acc9b466d6a71"
-  integrity sha512-SNb4zz0V42r4zJP8Er+P8o3f8JYalizJfrW9iKewVEduR1oAs/KTpNhCM5mUNSzp1uFVMN4wB3mRVJbk0+qZBw==
+"@0xpolygonid/js-sdk@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@0xpolygonid/js-sdk/-/js-sdk-1.0.3.tgz#13ed1d11d50597574f7510ded4c69b9c635d7c12"
+  integrity sha512-zbD4dYukKuvMozXpYvZ5npNTtJQtGHJhnbElPgBo0nEmwzxI5XcMdzJK2kKnV5Ol9pdGRY9UcgcyS0qPY5UKKg==
   dependencies:
     "@iden3/js-crypto" "1.0.0"
-    "@iden3/js-iden3-core" "1.0.0"
+    "@iden3/js-iden3-core" "1.0.1"
     "@iden3/js-jsonld-merklization" "1.0.1"
-    "@iden3/js-jwz" "1.0.0"
+    "@iden3/js-jwz" "1.0.1"
     "@iden3/js-merkletree" "1.0.0"
     "@lumeweb/js-sha3-browser" "^0.8.1"
     ajv "^8.12.0"
@@ -1365,12 +1365,12 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blockchain-lab-um/masca-connector@^0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-connector/-/masca-connector-0.4.7.tgz#7aa424be62b3a03bff76329823480bb32a6a3df1"
-  integrity sha512-g9q1gMAr0GEqz280KlPEIG2QIfZkMNQs3mLwNw2UbYcFXJZcavWG9+Z50zN6X6RGB3cw8uv9/pBcQd1OYihLpg==
+"@blockchain-lab-um/masca-connector@1.0.0-beta.1":
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-connector/-/masca-connector-1.0.0-beta.1.tgz#ab9567e42bd9882f72209a6558a61d8982daad0e"
+  integrity sha512-cYZHTWqyXjkpYQdywb8RDR1G3Ownt+yMuQHH7mlJlxYITkmteouzpZ27a4pYrHyByfnUFXicTbADb5TELpiTWg==
   dependencies:
-    "@blockchain-lab-um/masca-types" "0.4.7"
+    "@blockchain-lab-um/masca-types" "1.0.0-beta.1"
     "@blockchain-lab-um/utils" "1.3.5"
     "@didtools/pkh-ethereum" "0.4.0"
     "@metamask/detect-provider" "^2.0.0"
@@ -1378,14 +1378,14 @@
     did-session "2.0.1"
     eip-712-types-generation "^0.1.6"
 
-"@blockchain-lab-um/masca-types@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-types/-/masca-types-0.4.7.tgz#b26766f4421cb3e7d17c4e7efecdcc59edd4a6c2"
-  integrity sha512-Keeiy4KV2Gp2tDYskflfr6F70Cm0Aq/umfb0kPgpv/WyVbj+6CcOg0czTJA3j7TxbeyNBXBiuc0yAE0TPuhyew==
+"@blockchain-lab-um/masca-types@1.0.0-beta.1":
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-types/-/masca-types-1.0.0-beta.1.tgz#e56450202d34b24eb0ce90a088fee2b84d56b70f"
+  integrity sha512-1DtV6YF/3hcxsMtSkYXj4Pub4ccc0rZbsd+/MSrjbZGywbY8ydSZZFTCJKNHjHnUMhocBUwSQCR5BcPrFzfQog==
   dependencies:
-    "@0xpolygonid/js-sdk" "1.0.2"
+    "@0xpolygonid/js-sdk" "1.0.3"
     "@blockchain-lab-um/utils" "1.3.5"
-    "@iden3/js-iden3-core" "1.0.0"
+    "@iden3/js-iden3-core" "1.0.1"
     "@veramo/core" "5.4.1"
     "@veramo/key-manager" "5.4.1"
     typia "^4.2.1"
@@ -3277,10 +3277,10 @@
     blake-hash "^2.0.0"
     ffjavascript "^0.2.57"
 
-"@iden3/js-iden3-core@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@iden3/js-iden3-core/-/js-iden3-core-1.0.0.tgz#62af190d7a826f07975d28eadd1f00b41fead7e7"
-  integrity sha512-mc7SwWc4qjZ2F1JeW169mpcZol5L7j3AzXFthNGx9CfVV6m5ocOwnVR7w45WrLGLV3sNmBRtPOCahbtfzLzxkA==
+"@iden3/js-iden3-core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iden3/js-iden3-core/-/js-iden3-core-1.0.1.tgz#c0de94d1bb65b62506aa1cd079530cf61e8c5342"
+  integrity sha512-zNHkIGauxL8EGIykJySPnSgADZfvvjMIlPu0+t+slucZbeFXfxyc5HIo7UMKWB/X/KftJARggnhgsXF6EpMP6w==
   dependencies:
     "@iden3/js-crypto" "1.0.0"
     base58-js "^1.0.4"
@@ -3297,13 +3297,13 @@
     jsonld "^8.2.0"
     n3 "^1.16.3"
 
-"@iden3/js-jwz@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@iden3/js-jwz/-/js-jwz-1.0.0.tgz#81fb4ce92731ecc95461e2cba07922c7d4dcb6f0"
-  integrity sha512-fyGZP8ZerseDTAClZ6eULWw5Klcrp1SCJJRMdqvJS9mFHa2bDWHnPtYPZ3HltnDcVTQQc/EaLYw9Esit1jOzIw==
+"@iden3/js-jwz@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@iden3/js-jwz/-/js-jwz-1.0.1.tgz#8408e89d9f9383018eb6c5f6df22d15f7c36539f"
+  integrity sha512-jVZMJKiYWRs5q0J0bQag4Jj+P3+QmtfIPGy2zLsqh9W54nkvBoMCJqzetBUfCtTzMuvsFuE7mGlKtNM6SEjmrg==
   dependencies:
     "@iden3/js-crypto" "1.0.0"
-    "@iden3/js-iden3-core" "1.0.0"
+    "@iden3/js-iden3-core" "1.0.1"
     "@iden3/js-merkletree" "1.0.0"
     base58-js "^1.0.0"
     cross-sha256 "^1.2.0"

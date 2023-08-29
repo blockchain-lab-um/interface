@@ -166,7 +166,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
-    "@blockchain-lab-um/masca-connector": "^0.4.7",
+    "@blockchain-lab-um/masca-connector": "1.0.0-beta.1",
     "@coinbase/wallet-sdk": "^3.6.4",
     "@fontsource/ibm-plex-mono": "^4.5.1",
     "@fontsource/inter": "^4.5.1",

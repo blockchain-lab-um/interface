@@ -59,21 +59,21 @@ function Updater() {
     const initMasca = async () => {
       if (!account) return
       if (mascaApi) {
-        await mascaApi?.setCurrentAccount({ currentAccount: (account as string).toLowerCase() })
+        await mascaApi?.setCurrentAccount({ account: (account as string).toLowerCase() })
         setMascaApi(mascaApi)
         setEnabled(true)
         return
       }
       const mascaResult = await enableMasca((account as string).toLowerCase(), {
         snapId: 'npm:@blockchain-lab-um/masca',
-        version: '1.0.0-beta.0',
+        version: '1.0.0-beta.2',
         supportedMethods: ['did:polygonid'],
       })
       if (isError(mascaResult)) {
         throw new Error(mascaResult.error)
       }
       const newMascaApi = mascaResult.data.getMascaApi()
-      await newMascaApi?.setCurrentAccount({ currentAccount: account as string })
+      await newMascaApi?.setCurrentAccount({ account: account as string })
       setMascaApi(newMascaApi)
       setEnabled(true)
     }
