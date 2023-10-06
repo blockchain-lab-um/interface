@@ -24,7 +24,7 @@ declare global {
     }
     interface VisitOptions {
       serviceWorker?: true
-      featureFlags?: Array<FeatureFlag>
+      featureFlags?: Array<{ name: FeatureFlag; value: boolean }>
       /**
        * Initial user state.
        * @default {@type import('../utils/user-state').CONNECTED_WALLET_USER_STATE}
@@ -41,29 +41,28 @@ Cypress.Commands.overwrite(
   (original, url: string | Partial<Cypress.VisitOptions>, options?: Partial<Cypress.VisitOptions>) => {
     if (typeof url !== 'string') throw new Error('Invalid arguments. The first argument to cy.visit must be the path.')
 
-    // Add a hash in the URL if it is not present (to use hash-based routing correctly with queryParams).
-    const hashUrl = url.startsWith('/') && url.length > 2 && !url.startsWith('/#') ? `/#${url}` : url
-
     return cy
       .intercept('/service-worker.js', options?.serviceWorker ? undefined : { statusCode: 404 })
       .provider()
       .then((provider) =>
         original({
           ...options,
-          url: hashUrl,
+          url,
           onBeforeLoad(win) {
             options?.onBeforeLoad?.(win)
 
             setInitialUserState(win, {
               ...initialState,
-              hideUniswapWalletBanner: true,
               ...CONNECTED_WALLET_USER_STATE,
               ...(options?.userState ?? {}),
             })
 
             // Set feature flags, if configured.
             if (options?.featureFlags) {
-              const featureFlags = options.featureFlags.reduce((flags, flag) => ({ ...flags, [flag]: 'enabled' }), {})
+              const featureFlags = options.featureFlags.reduce(
+                (flags, flag) => ({ ...flags, [flag.name]: flag.value ? 'enabled' : 'control' }),
+                {}
+              )
               win.localStorage.setItem('featureFlags', JSON.stringify(featureFlags))
             }
 

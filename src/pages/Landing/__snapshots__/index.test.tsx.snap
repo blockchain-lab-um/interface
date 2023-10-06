@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`disable nft on landing page does not render nft information and card 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
 }
 
-.c24 {
+.c15 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -30,7 +30,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   border-radius: 4px;
 }
 
-.c43 {
+.c47 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -54,7 +54,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   font-weight: 535;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -71,28 +71,28 @@ exports[`disable nft on landing page does not render nft information and card 1`
   justify-content: flex-start;
 }
 
-.c8 {
+.c9 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.c10 {
+.c11 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.c12 {
+.c13 {
   color: #222222;
 }
 
-.c20 {
+.c26 {
   color: #7D7D7D;
 }
 
-.c95 {
+.c99 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -103,15 +103,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
   font-weight: 500;
 }
 
-.c95:hover {
+.c99:hover {
   opacity: 0.6;
 }
 
-.c95:active {
+.c99:active {
   opacity: 0.4;
 }
 
-.c93 {
+.c97 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -122,36 +122,36 @@ exports[`disable nft on landing page does not render nft information and card 1`
   font-weight: 500;
 }
 
-.c93:hover {
+.c97:hover {
   opacity: 0.6;
 }
 
-.c93:active {
+.c97:active {
   opacity: 0.4;
 }
 
-.c86 {
+.c90 {
   height: 32px;
   width: 32px;
   fill: #98A1C0;
   opacity: 1;
 }
 
-.c87 {
+.c91 {
   height: 32px;
   width: 32px;
   fill: #98A1C0;
   opacity: 1;
 }
 
-.c88 {
+.c92 {
   height: 32px;
   width: 32px;
   fill: #98A1C0;
   opacity: 1;
 }
 
-.c80 {
+.c84 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -164,7 +164,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   max-width: 1440px;
 }
 
-.c81 {
+.c85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,24 +174,24 @@ exports[`disable nft on landing page does not render nft information and card 1`
   flex-direction: column;
 }
 
-.c82 {
+.c86 {
   display: none;
 }
 
-.c97 {
+.c101 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c83 {
+.c87 {
   width: 72px;
   height: 72px;
   display: none;
 }
 
-.c84 {
+.c88 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -204,20 +204,20 @@ exports[`disable nft on landing page does not render nft information and card 1`
   margin: 20px 0 0 0;
 }
 
-.c85 {
+.c89 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c90 {
+.c94 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
 
-.c91 {
+.c95 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -230,32 +230,32 @@ exports[`disable nft on landing page does not render nft information and card 1`
   margin: 20px 0 0 0;
 }
 
-.c92 {
+.c96 {
   font-size: 16px;
   line-height: 20px;
   font-weight: 535;
 }
 
-.c96 {
+.c100 {
   font-size: 16px;
   line-height: 20px;
   color: #7D7D7D;
 }
 
-.c94 {
+.c98 {
   font-size: 16px;
   line-height: 20px;
   color: #7D7D7D;
 }
 
-.c89 {
+.c93 {
   font-size: 16px;
   line-height: 20px;
   margin: 1rem 0 0 0;
   color: #CECECE;
 }
 
-.c63 {
+.c67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -283,11 +283,11 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: 250ms ease border;
 }
 
-.c63:hover {
+.c67:hover {
   border: 1px solid #CECECE;
 }
 
-.c69 {
+.c73 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,11 +315,11 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: 250ms ease border;
 }
 
-.c69:hover {
+.c73:hover {
   border: 1px solid #CECECE;
 }
 
-.c64 {
+.c68 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -334,13 +334,13 @@ exports[`disable nft on landing page does not render nft information and card 1`
   justify-content: space-between;
 }
 
-.c65 {
+.c69 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 535;
 }
 
-.c66 {
+.c70 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -355,7 +355,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   max-width: 480px;
 }
 
-.c70 {
+.c74 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -370,7 +370,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   max-width: 480px;
 }
 
-.c67 {
+.c71 {
   color: #FC72FF;
   font-weight: 535;
   margin: 24px 0 0;
@@ -379,18 +379,18 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: 250ms ease opacity;
 }
 
-.c67:hover {
+.c71:hover {
   opacity: 0.6;
 }
 
-.c71 {
+.c75 {
   min-width: 20px;
   min-height: 20px;
   max-height: 48px;
   max-width: 48px;
 }
 
-.c46 {
+.c50 {
   background-color: transparent;
   bottom: 0;
   border-radius: inherit;
@@ -404,7 +404,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   width: 100%;
 }
 
-.c25 {
+.c16 {
   padding: 16px;
   width: 100%;
   line-height: 24px;
@@ -443,25 +443,25 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transform: perspective(1px) translateZ(0);
 }
 
-.c25:disabled {
+.c16:disabled {
   opacity: 50%;
   cursor: auto;
   pointer-events: none;
 }
 
-.c25 > * {
+.c16 > * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.c25 > a {
+.c16 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c77 {
+.c81 {
   padding: 16px;
   width: 200px;
   line-height: 24px;
@@ -500,58 +500,58 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transform: perspective(1px) translateZ(0);
 }
 
-.c77:disabled {
+.c81:disabled {
   opacity: 50%;
   cursor: auto;
   pointer-events: none;
 }
 
-.c77 > * {
+.c81 > * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.c77 > a {
+.c81 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c44 {
+.c48 {
   background-color: #FFEFFF;
   color: #FC72FF;
   font-size: 20px;
   font-weight: 535;
 }
 
-.c44:focus {
+.c48:focus {
   box-shadow: 0 0 0 1pt #FFEFFF;
   background-color: #FFEFFF;
 }
 
-.c44:hover {
+.c48:hover {
   background-color: #FFEFFF;
 }
 
-.c44:active {
+.c48:active {
   box-shadow: 0 0 0 1pt #FFEFFF;
   background-color: #FFEFFF;
 }
 
-.c44:hover .c45 {
+.c48:hover .c49 {
   background-color: #98A1C014;
 }
 
-.c44:active .c45 {
+.c48:active .c49 {
   background-color: #B8C0DC3d;
 }
 
-.c44:disabled {
+.c48:disabled {
   opacity: 0.4;
 }
 
-.c44:disabled:hover {
+.c48:disabled:hover {
   cursor: auto;
   background-color: transparent;
   box-shadow: none;
@@ -559,7 +559,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   outline: none;
 }
 
-.c26 {
+.c30 {
   background-color: #FFFFFF;
   color: #7D7D7D;
   border: 1px solid #22222212;
@@ -567,15 +567,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
   font-weight: 535;
 }
 
-.c26:hover {
+.c30:hover {
   background-color: #ececec;
 }
 
-.c26:active {
+.c30:active {
   background-color: #e0e0e0;
 }
 
-.c78 {
+.c82 {
   background-color: transparent;
   color: #FC72FF;
   display: -webkit-box;
@@ -592,27 +592,56 @@ exports[`disable nft on landing page does not render nft information and card 1`
   align-items: center;
 }
 
-.c78:focus {
+.c82:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c78:hover {
+.c82:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c78:active {
+.c82:active {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c78:disabled {
+.c82:disabled {
   opacity: 50%;
   cursor: auto;
 }
 
-.c72 {
+.c17 {
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c17:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c17:hover {
+  opacity: 0.9;
+}
+
+.c17:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c17:disabled {
+  opacity: 50%;
+  cursor: auto;
+}
+
+.c76 {
   height: 340px;
   width: 100%;
   border-radius: 32px;
@@ -638,7 +667,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   background: url(Mesh.png),linear-gradient(93.06deg,#FF00C7 2.66%,#FF9FFB 98.99%);
 }
 
-.c73 {
+.c77 {
   color: white;
   display: -webkit-box;
   display: -webkit-flex;
@@ -652,20 +681,20 @@ exports[`disable nft on landing page does not render nft information and card 1`
   flex-direction: column;
 }
 
-.c74 {
+.c78 {
   font-weight: 535;
   font-size: 28px;
   line-height: 36px;
 }
 
-.c75 {
+.c79 {
   margin: 10px 10px 0 0;
   font-weight: 535;
   font-size: 16px;
   line-height: 20px;
 }
 
-.c76 {
+.c80 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -679,22 +708,22 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: 250ms ease opacity;
 }
 
-.c76:hover {
+.c80:hover {
   opacity: 0.6;
 }
 
-.c79 {
+.c83 {
   color: white;
   border: 1px solid white;
 }
 
-.c39 {
+.c43 {
   display: grid;
   grid-auto-rows: auto;
   grid-row-gap: 4px;
 }
 
-.c36 {
+.c40 {
   -webkit-filter: none;
   filter: none;
   opacity: 1;
@@ -702,7 +731,12 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: opacity 250ms ease-in-out;
 }
 
-.c31 {
+.c14 {
+  display: inline-block;
+  height: inherit;
+}
+
+.c35 {
   opacity: 0;
   -webkit-transition: opacity 250ms ease-in;
   transition: opacity 250ms ease-in;
@@ -711,7 +745,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   border-radius: 50%;
 }
 
-.c30 {
+.c34 {
   width: 24px;
   height: 24px;
   background: #22222212;
@@ -721,7 +755,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   border-radius: 50%;
 }
 
-.c29 {
+.c33 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -729,8 +763,9 @@ exports[`disable nft on landing page does not render nft information and card 1`
   display: flex;
 }
 
-.c22 {
+.c28 {
   color: #222222;
+  pointer-events: auto;
   width: 0;
   position: relative;
   font-weight: 485;
@@ -749,36 +784,36 @@ exports[`disable nft on landing page does not render nft information and card 1`
   text-align: right;
 }
 
-.c22::-webkit-search-decoration {
+.c28::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.c22 [type='number'] {
+.c28 [type='number'] {
   -moz-appearance: textfield;
 }
 
-.c22::-webkit-outer-spin-button,
-.c22::-webkit-inner-spin-button {
+.c28::-webkit-outer-spin-button,
+.c28::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.c22::-webkit-input-placeholder {
+.c28::-webkit-input-placeholder {
   color: #CECECE;
 }
 
-.c22::-moz-placeholder {
+.c28::-moz-placeholder {
   color: #CECECE;
 }
 
-.c22:-ms-input-placeholder {
+.c28:-ms-input-placeholder {
   color: #CECECE;
 }
 
-.c22::placeholder {
+.c28::placeholder {
   color: #CECECE;
 }
 
-.c18 {
+.c24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -795,13 +830,13 @@ exports[`disable nft on landing page does not render nft information and card 1`
   will-change: height;
 }
 
-.c19 {
+.c25 {
   min-height: 44px;
   border-radius: 20px;
   width: initial;
 }
 
-.c27 {
+.c31 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -810,8 +845,8 @@ exports[`disable nft on landing page does not render nft information and card 1`
   opacity: 1;
   color: #222222;
   cursor: pointer;
-  height: unset;
-  border-radius: 16px;
+  height: 36px;
+  border-radius: 18px;
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -830,14 +865,16 @@ exports[`disable nft on landing page does not render nft information and card 1`
   margin-left: 12px;
   box-shadow: 0px 0px 10px 0px rgba(34,34,34,0.04);
   visibility: visible;
+  -webkit-animation: none;
+  animation: none;
 }
 
-.c27:hover,
-.c27:active {
+.c31:hover,
+.c31:active {
   background-color: #F9F9F9;
 }
 
-.c27:before {
+.c31:before {
   background-size: 100%;
   border-radius: inherit;
   position: absolute;
@@ -848,15 +885,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
   content: '';
 }
 
-.c27:hover:before {
+.c31:hover:before {
   background-color: #98A1C014;
 }
 
-.c27:active:before {
+.c31:active:before {
   background-color: #B8C0DC3d;
 }
 
-.c41 {
+.c45 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -865,8 +902,8 @@ exports[`disable nft on landing page does not render nft information and card 1`
   opacity: 1;
   color: #FFFFFF;
   cursor: pointer;
-  height: unset;
-  border-radius: 16px;
+  height: 36px;
+  border-radius: 18px;
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -885,14 +922,16 @@ exports[`disable nft on landing page does not render nft information and card 1`
   margin-left: 12px;
   box-shadow: 0px 0px 10px 0px rgba(34,34,34,0.04);
   visibility: visible;
+  -webkit-animation: none;
+  animation: none;
 }
 
-.c41:hover,
-.c41:active {
+.c45:hover,
+.c45:active {
   background-color: #FC72FF;
 }
 
-.c41:before {
+.c45:before {
   background-size: 100%;
   border-radius: inherit;
   position: absolute;
@@ -903,15 +942,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
   content: '';
 }
 
-.c41:hover:before {
+.c45:hover:before {
   background-color: #98A1C014;
 }
 
-.c41:active:before {
+.c45:active:before {
   background-color: #B8C0DC3d;
 }
 
-.c21 {
+.c27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -929,7 +968,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   justify-content: space-between;
 }
 
-.c34 {
+.c38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -946,12 +985,12 @@ exports[`disable nft on landing page does not render nft information and card 1`
   line-height: 1rem;
 }
 
-.c34 span:hover {
+.c38 span:hover {
   cursor: pointer;
   color: #4a4a4a;
 }
 
-.c35 {
+.c39 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -960,7 +999,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   padding: 8px 0px 0px 0px;
 }
 
-.c28 {
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -976,35 +1015,35 @@ exports[`disable nft on landing page does not render nft information and card 1`
   width: 100%;
 }
 
-.c33 {
+.c37 {
   margin: 0 0.25rem 0 0.35rem;
   height: 35%;
   margin-left: 8px;
 }
 
-.c33 path {
+.c37 path {
   stroke: #222222;
   stroke-width: 2px;
 }
 
-.c42 {
+.c46 {
   margin: 0 0.25rem 0 0.35rem;
   height: 35%;
   margin-left: 8px;
 }
 
-.c42 path {
+.c46 path {
   stroke: #FFFFFF;
   stroke-width: 2px;
 }
 
-.c32 {
+.c36 {
   margin: 0 0.25rem 0 0.25rem;
   font-size: 20px;
   font-weight: 535;
 }
 
-.c23 {
+.c29 {
   -webkit-filter: none;
   filter: none;
   opacity: 1;
@@ -1024,23 +1063,44 @@ exports[`disable nft on landing page does not render nft information and card 1`
 
 .c4 {
   position: relative;
-  background: #FFFFFF;
-  border-radius: 24px;
-  border: 1px solid #22222212;
-  padding: 8px;
-  padding-top: 12px;
-  box-shadow: 0px 0px 10px 0px rgba(252,114,255,0.04),0px 40px 120px 0px rgba(252,114,255,0.12);
   z-index: 1;
+  border: 1px solid #22222212;
   -webkit-transition: -webkit-transform 250ms ease;
   -webkit-transition: transform 250ms ease;
   transition: transform 250ms ease;
+  border-radius: 24px;
+}
+
+.c4:before {
+  content: ' ';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  inset: 0;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  background-color: rgba(252,114,255,0.075);
+  z-index: -2;
 }
 
 .c4:hover {
   border: 1px solid #22222212;
 }
 
-.c37 {
+.c6 {
+  border-radius: 24px;
+  background: #FFFFFF;
+  z-index: -1;
+  padding: 8px;
+  padding-top: 12px;
+}
+
+.c41 {
   border-radius: 12px;
   height: 40px;
   width: 40px;
@@ -1055,21 +1115,21 @@ exports[`disable nft on landing page does not render nft information and card 1`
   z-index: 2;
 }
 
-.c37:hover {
+.c41:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-.c16 {
+.c22 {
   height: 24px;
   width: 24px;
 }
 
-.c16 > * {
+.c22 > * {
   fill: #7D7D7D;
 }
 
-.c14 {
+.c20 {
   border: none;
   background-color: transparent;
   margin: 0;
@@ -1078,30 +1138,48 @@ exports[`disable nft on landing page does not render nft information and card 1`
   outline: none;
 }
 
-.c14:not([disabled]):hover {
+.c20:not([disabled]):hover {
   opacity: 0.7;
 }
 
-.c15 {
+.c21 {
   padding: 6px 12px;
   border-radius: 16px;
 }
 
-.c13 {
+.c19 {
   position: relative;
 }
 
-.c9 {
+.c18 {
+  -webkit-animation: iAjNNh 125ms ease-in;
+  animation: iAjNNh 125ms ease-in;
+  color: #7D7D7D;
+  gap: 4px;
+  font-weight: 485;
+}
+
+.c18:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c18:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 {
   margin-bottom: 10px;
   color: #7D7D7D;
 }
 
-.c11 {
+.c12 {
   padding: 0 12px;
   gap: 16px;
 }
 
-.c38 {
+.c42 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1118,7 +1196,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   height: 100%;
 }
 
-.c17 {
+.c23 {
   background-color: #F9F9F9;
   border-radius: 16px;
   color: #7D7D7D;
@@ -1130,7 +1208,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   position: relative;
 }
 
-.c17:before {
+.c23:before {
   box-sizing: border-box;
   background-size: 100%;
   border-radius: inherit;
@@ -1144,15 +1222,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
   border: 1px solid #F9F9F9;
 }
 
-.c17:hover:before {
+.c23:hover:before {
   border-color: #98A1C014;
 }
 
-.c17:focus-within:before {
+.c23:focus-within:before {
   border-color: #B8C0DC3d;
 }
 
-.c40 {
+.c44 {
   border-bottom: 1px solid #FFFFFF;
 }
 
@@ -1179,7 +1257,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   overflow-x: hidden;
 }
 
-.c47 {
+.c51 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1203,7 +1281,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   height: calc(100vh - 48px);
 }
 
-.c48 {
+.c52 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1224,7 +1302,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   height: calc(100vh - 48px);
 }
 
-.c49 {
+.c53 {
   position: absolute;
   top: 68px;
   bottom: 0;
@@ -1237,7 +1315,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   height: 100%;
 }
 
-.c50 {
+.c54 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1265,11 +1343,31 @@ exports[`disable nft on landing page does not render nft information and card 1`
   pointer-events: none;
 }
 
-.c50 * {
+.c54 * {
   pointer-events: auto;
 }
 
-.c51 {
+.c64 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 24px;
+  color: #7D7D7D;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 535;
+  text-align: center;
+}
+
+.c64:hover {
+  color: #CECECE;
+}
+
+.c55 {
   color: transparent;
   font-size: 36px;
   line-height: 44px;
@@ -1279,9 +1377,11 @@ exports[`disable nft on landing page does not render nft information and card 1`
   background: linear-gradient(10deg,rgba(255,79,184,1) 0%,rgba(255,159,251,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-animation: iAjNNh 125ms ease-in;
+  animation: iAjNNh 125ms ease-in;
 }
 
-.c53 {
+.c57 {
   color: #7D7D7D;
   font-size: 16px;
   line-height: 24px;
@@ -1291,7 +1391,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   margin: 0 0 32px;
 }
 
-.c52 {
+.c56 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1300,14 +1400,16 @@ exports[`disable nft on landing page does not render nft information and card 1`
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-animation: iAjNNh 125ms ease-in;
+  animation: iAjNNh 125ms ease-in;
 }
 
-.c55 {
+.c59 {
   padding: 16px 0px;
   border-radius: 24px;
 }
 
-.c56 {
+.c60 {
   background: linear-gradient(93.06deg,#ff00c7 2.66%,#ff9ffb 98.99%);
   border: none;
   color: #FFFFFF;
@@ -1315,24 +1417,24 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: all 250ms ease;
 }
 
-.c56:hover {
+.c60:hover {
   box-shadow: 0px 0px 16px 0px #ff00c7;
 }
 
-.c57 {
+.c61 {
   margin: 0px;
   font-size: 16px;
   font-weight: 535;
   white-space: nowrap;
 }
 
-.c54 {
+.c58 {
   max-width: 300px;
   width: 100%;
   pointer-events: auto;
 }
 
-.c58 {
+.c62 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1352,16 +1454,16 @@ exports[`disable nft on landing page does not render nft information and card 1`
   transition: 250ms ease opacity;
 }
 
-.c58:hover {
+.c62:hover {
   opacity: 0.6;
 }
 
-.c59 {
+.c63 {
   margin-left: 14px;
   size: 20px;
 }
 
-.c61 {
+.c65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1378,7 +1480,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   background: linear-gradient(179.82deg,rgba(255,255,255,0) 0.16%,#eaeaea 99.85%);
 }
 
-.c62 {
+.c66 {
   display: grid;
   gap: 12px;
   width: 100%;
@@ -1391,7 +1493,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
   grid-template-columns: 1fr;
 }
 
-.c68 {
+.c72 {
   display: grid;
   gap: 12px;
   width: 100%;
@@ -1445,28 +1547,8 @@ exports[`disable nft on landing page does not render nft information and card 1`
   width: 100%;
 }
 
-.c60 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  gap: 8px;
-  margin-top: 24px;
-  color: #7D7D7D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 535;
-  text-align: center;
-}
-
-.c60:hover {
-  color: #CECECE;
-}
-
 @media screen and (min-width:1024px) {
-  .c80 {
+  .c84 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1478,7 +1560,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
 }
 
 @media screen and (min-width:1024px) {
-  .c82 {
+  .c86 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1487,66 +1569,58 @@ exports[`disable nft on landing page does not render nft information and card 1`
 }
 
 @media screen and (min-width:1024px) {
-  .c97 {
+  .c101 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c83 {
+  .c87 {
     display: block;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c90 {
+  .c94 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c91 {
+  .c95 {
     margin: 0;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c63 {
+  .c67 {
     height: 360px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c63 {
+  .c67 {
     padding: 32px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c69 {
+  .c73 {
     height: 260px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c69 {
+  .c73 {
     padding: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c65 {
+  .c69 {
     font-size: 28px;
     line-height: 36px;
-  }
-}
-
-@media screen and (min-width:1280px) {
-  .c66 {
-    font-size: 20px;
-    line-height: 28px;
-    max-width: 480px;
   }
 }
 
@@ -1558,8 +1632,16 @@ exports[`disable nft on landing page does not render nft information and card 1`
   }
 }
 
+@media screen and (min-width:1280px) {
+  .c74 {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width:1024px) {
-  .c72 {
+  .c76 {
     height: 140px;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -1568,21 +1650,21 @@ exports[`disable nft on landing page does not render nft information and card 1`
 }
 
 @media screen and (min-width:1280px) {
-  .c74 {
+  .c78 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c75 {
+  .c79 {
     font-size: 20px;
     line-height: 28px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c76 {
+  .c80 {
     width: auto;
   }
 }
@@ -1600,79 +1682,79 @@ exports[`disable nft on landing page does not render nft information and card 1`
 }
 
 @media screen and (min-width:768px) {
-  .c47 {
+  .c51 {
     height: 100vh;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c48 {
+  .c52 {
     height: 100vh;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c51 {
+  .c55 {
     font-size: 48px;
     line-height: 56px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c51 {
+  .c55 {
     font-size: 64px;
     line-height: 72px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c53 {
+  .c57 {
     font-size: 20px;
     line-height: 28px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c57 {
+  .c61 {
     font-size: 20px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c58 {
+  .c62 {
     visibility: visible;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c61 {
+  .c65 {
     padding: 0 96px 5rem;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c62 {
+  .c66 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c62 {
+  .c66 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c68 {
+  .c72 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c68 {
+  .c72 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
   }
@@ -1688,7 +1770,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
     >
       <a
         class="c2"
-        href="#/swap"
+        href="/swap"
       >
         <div
           class="c3"
@@ -1698,240 +1780,156 @@ exports[`disable nft on landing page does not render nft information and card 1`
             id="swap-page"
           >
             <div
-              class="c6 c7 c8 c9"
+              class="c6"
             >
               <div
-                class="c6 c7 c10 c11"
+                class="c7 c8 c9 c10"
               >
                 <div
-                  class="c12 css-n8z49y"
+                  class="c7 c8 c11 c12"
                 >
-                  Swap
-                </div>
-              </div>
-              <div
-                class="c6 c7 c10"
-              >
-                <div
-                  class="c13"
-                >
-                  <button
-                    aria-label="Transaction Settings"
-                    class="c14"
-                    data-testid="open-settings-dialog-button"
-                    id="open-settings-dialog-button"
+                  <div
+                    class="c13 css-n8z49y"
                   >
-                    <div
-                      class="c6 c7 c15"
-                    >
-                      <svg
-                        class="c16"
-                        fill="none"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
+                    Swap
+                  </div>
+                  <div
+                    class="c14"
+                  >
+                    <div>
+                      <button
+                        class="c15 c16 c17 c18"
+                        data-testid="buy-fiat-button"
                       >
-                        <path
-                          d="M20.83 14.6C19.9 14.06 19.33 13.07 19.33 12C19.33 10.93 19.9 9.93999 20.83 9.39999C20.99 9.29999 21.05 9.1 20.95 8.94L19.28 6.06C19.22 5.95 19.11 5.89001 19 5.89001C18.94 5.89001 18.88 5.91 18.83 5.94C18.37 6.2 17.85 6.34 17.33 6.34C16.8 6.34 16.28 6.19999 15.81 5.92999C14.88 5.38999 14.31 4.41 14.31 3.34C14.31 3.15 14.16 3 13.98 3H10.02C9.83999 3 9.69 3.15 9.69 3.34C9.69 4.41 9.12 5.38999 8.19 5.92999C7.72 6.19999 7.20001 6.34 6.67001 6.34C6.15001 6.34 5.63001 6.2 5.17001 5.94C5.01001 5.84 4.81 5.9 4.72 6.06L3.04001 8.94C3.01001 8.99 3 9.05001 3 9.10001C3 9.22001 3.06001 9.32999 3.17001 9.39999C4.10001 9.93999 4.67001 10.92 4.67001 11.99C4.67001 13.07 4.09999 14.06 3.17999 14.6H3.17001C3.01001 14.7 2.94999 14.9 3.04999 15.06L4.72 17.94C4.78 18.05 4.89 18.11 5 18.11C5.06 18.11 5.12001 18.09 5.17001 18.06C6.11001 17.53 7.26 17.53 8.19 18.07C9.11 18.61 9.67999 19.59 9.67999 20.66C9.67999 20.85 9.82999 21 10.02 21H13.98C14.16 21 14.31 20.85 14.31 20.66C14.31 19.59 14.88 18.61 15.81 18.07C16.28 17.8 16.8 17.66 17.33 17.66C17.85 17.66 18.37 17.8 18.83 18.06C18.99 18.16 19.19 18.1 19.28 17.94L20.96 15.06C20.99 15.01 21 14.95 21 14.9C21 14.78 20.94 14.67 20.83 14.6ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z"
-                          fill="currentColor"
-                        />
-                      </svg>
+                        Buy
+                      </button>
                     </div>
-                  </button>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div
-              style="display: relative;"
-            >
-              <div
-                class="c17"
-              >
                 <div
-                  class="c18"
-                  id="swap-currency-input"
+                  class="c7 c8 c11"
                 >
                   <div
                     class="c19"
                   >
-                    <div
-                      class="c20 css-142zc9n"
-                      style="user-select: none;"
-                    >
-                      You pay
-                    </div>
-                    <div
-                      class="c21"
-                    >
-                      <input
-                        autocomplete="off"
-                        autocorrect="off"
-                        class="c22 c23 token-amount-input"
-                        inputmode="decimal"
-                        maxlength="79"
-                        minlength="1"
-                        pattern="^[0-9]*[.,]?[0-9]*$"
-                        placeholder="0"
-                        spellcheck="false"
-                        type="text"
-                        value=""
-                      />
-                      <div>
-                        <button
-                          class="c24 c25 c26 c27 open-currency-select-button"
-                        >
-                          <span
-                            class="c28"
-                          >
-                            <div
-                              class="c6 c7 c10"
-                            >
-                              <div
-                                class="c29"
-                                style="height: 24px; width: 24px; margin-right: 2px;"
-                              >
-                                <div
-                                  class="c30"
-                                >
-                                  <img
-                                    alt="ETH logo"
-                                    class="c31"
-                                    src="ethereum-logo.png"
-                                  />
-                                </div>
-                              </div>
-                              <span
-                                class="c32 token-symbol-container"
-                              >
-                                ETH
-                              </span>
-                            </div>
-                            <svg
-                              class="c33"
-                            >
-                              dropdown.svg
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      class="c34 c35"
+                    <button
+                      aria-label="Transaction Settings"
+                      class="c20"
+                      data-testid="open-settings-dialog-button"
+                      id="open-settings-dialog-button"
                     >
                       <div
-                        class="c6 c7 c8"
+                        class="c7 c8 c21"
                       >
-                        <div
-                          class="c36"
-                        />
-                        <span />
+                        <svg
+                          class="c22"
+                          fill="none"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.83 14.6C19.9 14.06 19.33 13.07 19.33 12C19.33 10.93 19.9 9.93999 20.83 9.39999C20.99 9.29999 21.05 9.1 20.95 8.94L19.28 6.06C19.22 5.95 19.11 5.89001 19 5.89001C18.94 5.89001 18.88 5.91 18.83 5.94C18.37 6.2 17.85 6.34 17.33 6.34C16.8 6.34 16.28 6.19999 15.81 5.92999C14.88 5.38999 14.31 4.41 14.31 3.34C14.31 3.15 14.16 3 13.98 3H10.02C9.83999 3 9.69 3.15 9.69 3.34C9.69 4.41 9.12 5.38999 8.19 5.92999C7.72 6.19999 7.20001 6.34 6.67001 6.34C6.15001 6.34 5.63001 6.2 5.17001 5.94C5.01001 5.84 4.81 5.9 4.72 6.06L3.04001 8.94C3.01001 8.99 3 9.05001 3 9.10001C3 9.22001 3.06001 9.32999 3.17001 9.39999C4.10001 9.93999 4.67001 10.92 4.67001 11.99C4.67001 13.07 4.09999 14.06 3.17999 14.6H3.17001C3.01001 14.7 2.94999 14.9 3.04999 15.06L4.72 17.94C4.78 18.05 4.89 18.11 5 18.11C5.06 18.11 5.12001 18.09 5.17001 18.06C6.11001 17.53 7.26 17.53 8.19 18.07C9.11 18.61 9.67999 19.59 9.67999 20.66C9.67999 20.85 9.82999 21 10.02 21H13.98C14.16 21 14.31 20.85 14.31 20.66C14.31 19.59 14.88 18.61 15.81 18.07C16.28 17.8 16.8 17.66 17.33 17.66C17.85 17.66 18.37 17.8 18.83 18.06C18.99 18.16 19.19 18.1 19.28 17.94L20.96 15.06C20.99 15.01 21 14.95 21 14.9C21 14.78 20.94 14.67 20.83 14.6ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z"
+                            fill="currentColor"
+                          />
+                        </svg>
                       </div>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
               <div
-                class="c37"
+                style="display: relative;"
               >
                 <div
-                  class="c38"
-                  color="#222222"
-                  data-testid="swap-currency-button"
-                >
-                  <svg
-                    fill="none"
-                    height="16"
-                    stroke="#222222"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <line
-                      x1="12"
-                      x2="12"
-                      y1="5"
-                      y2="19"
-                    />
-                    <polyline
-                      points="19 12 12 19 5 12"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div
-              class="c39"
-            >
-              <div>
-                <div
-                  class="c17 c40"
+                  class="c23"
                 >
                   <div
-                    class="c18"
-                    id="swap-currency-output"
+                    class="c24"
+                    id="swap-currency-input"
                   >
                     <div
-                      class="c19"
+                      class="c25"
                     >
                       <div
-                        class="c20 css-142zc9n"
+                        class="c26 css-142zc9n"
                         style="user-select: none;"
                       >
-                        You receive
+                        You pay
                       </div>
                       <div
-                        class="c21"
+                        class="c27"
                       >
-                        <input
-                          autocomplete="off"
-                          autocorrect="off"
-                          class="c22 c23 token-amount-input"
-                          inputmode="decimal"
-                          maxlength="79"
-                          minlength="1"
-                          pattern="^[0-9]*[.,]?[0-9]*$"
-                          placeholder="0"
-                          spellcheck="false"
-                          type="text"
-                          value=""
-                        />
+                        <div
+                          style="display: flex; flex-grow: 1;"
+                        >
+                          <input
+                            autocomplete="off"
+                            autocorrect="off"
+                            class="c28 c29 token-amount-input"
+                            id="swap-currency-input"
+                            inputmode="decimal"
+                            maxlength="79"
+                            minlength="1"
+                            pattern="^[0-9]*[.,]?[0-9]*$"
+                            placeholder="0"
+                            spellcheck="false"
+                            type="text"
+                            value=""
+                          />
+                        </div>
                         <div>
-                          <button
-                            class="c24 c25 c26 c41 open-currency-select-button"
+                          <div
+                            class="c14"
                           >
-                            <span
-                              class="c28"
+                            <button
+                              class="c15 c16 c30 c31 open-currency-select-button"
                             >
-                              <div
-                                class="c6 c7 c10"
+                              <span
+                                class="c32"
                               >
-                                <span
-                                  class="c32 token-symbol-container"
+                                <div
+                                  class="c7 c8 c11"
                                 >
-                                  Select token
-                                </span>
-                              </div>
-                              <svg
-                                class="c42"
-                              >
-                                dropdown.svg
-                              </svg>
-                            </span>
-                          </button>
+                                  <div
+                                    class="c33"
+                                    style="height: 24px; width: 24px; margin-right: 2px;"
+                                  >
+                                    <div
+                                      class="c34"
+                                    >
+                                      <img
+                                        alt="ETH logo"
+                                        class="c35"
+                                        src="ethereum-logo.png"
+                                      />
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="c36 token-symbol-container"
+                                  >
+                                    ETH
+                                  </span>
+                                </div>
+                                <svg
+                                  class="c37"
+                                >
+                                  dropdown.svg
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                       <div
-                        class="c34 c35"
+                        class="c38 c39"
                       >
                         <div
-                          class="c6 c7 c8"
+                          class="c7 c8 c9"
                         >
                           <div
-                            class="c36"
+                            class="c40"
                           />
                           <span />
                         </div>
@@ -1939,17 +1937,135 @@ exports[`disable nft on landing page does not render nft information and card 1`
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <button
-                  class="c43 c25 c44"
-                  font-weight="535"
+                <div
+                  class="c41"
                 >
                   <div
-                    class="c45 c46"
-                  />
-                  Connect Wallet
-                </button>
+                    class="c42"
+                    color="#222222"
+                    data-testid="swap-currency-button"
+                  >
+                    <svg
+                      fill="none"
+                      height="16"
+                      stroke="#222222"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="5"
+                        y2="19"
+                      />
+                      <polyline
+                        points="19 12 12 19 5 12"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c43"
+              >
+                <div>
+                  <div
+                    class="c23 c44"
+                  >
+                    <div
+                      class="c24"
+                      id="swap-currency-output"
+                    >
+                      <div
+                        class="c25"
+                      >
+                        <div
+                          class="c26 css-142zc9n"
+                          style="user-select: none;"
+                        >
+                          You receive
+                        </div>
+                        <div
+                          class="c27"
+                        >
+                          <div
+                            style="display: flex; flex-grow: 1;"
+                          >
+                            <input
+                              autocomplete="off"
+                              autocorrect="off"
+                              class="c28 c29 token-amount-input"
+                              id="swap-currency-output"
+                              inputmode="decimal"
+                              maxlength="79"
+                              minlength="1"
+                              pattern="^[0-9]*[.,]?[0-9]*$"
+                              placeholder="0"
+                              spellcheck="false"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div>
+                            <div
+                              class="c14"
+                            >
+                              <button
+                                class="c15 c16 c30 c45 open-currency-select-button"
+                              >
+                                <span
+                                  class="c32"
+                                >
+                                  <div
+                                    class="c7 c8 c11"
+                                  >
+                                    <span
+                                      class="c36 token-symbol-container"
+                                    >
+                                      Select token
+                                    </span>
+                                  </div>
+                                  <svg
+                                    class="c46"
+                                  >
+                                    dropdown.svg
+                                  </svg>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="c38 c39"
+                        >
+                          <div
+                            class="c7 c8 c9"
+                          >
+                            <div
+                              class="c40"
+                            />
+                            <span />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="c47 c16 c48"
+                    font-weight="535"
+                  >
+                    <div
+                      class="c49 c50"
+                    />
+                    Connect wallet
+                  </button>
+                </div>
               </div>
             </div>
           </main>
@@ -1957,52 +2073,52 @@ exports[`disable nft on landing page does not render nft information and card 1`
       </a>
     </div>
     <div
-      class="c47"
+      class="c51"
     />
     <div
-      class="c48"
+      class="c52"
     >
       <div
-        class="c49"
+        class="c53"
       />
     </div>
     <div
-      class="c50"
+      class="c54"
     >
       <h1
-        class="c51"
+        class="c55"
       >
         Trade crypto with confidence
       </h1>
       <div
-        class="c52"
+        class="c56"
       >
         <div
-          class="c53"
+          class="c57"
         >
           Buy, sell, and explore tokens
         </div>
       </div>
       <span
-        class="c54"
+        class="c58"
       >
         <a
-          class="c2 c25 c55 c56"
-          href="#/swap"
+          class="c2 c16 c59 c60"
+          href="/swap"
         >
           <p
-            class="c57"
+            class="c61"
           >
             Get started
           </p>
         </a>
       </span>
       <div
-        class="c58"
+        class="c62"
       >
         Learn more
         <svg
-          class="c59"
+          class="c63"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -2030,7 +2146,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
         </svg>
       </div>
       <a
-        class="c60"
+        class="c64"
         href="https://wallet.uniswap.org/?utm_source=home_page&utm_medium=webapp&utm_campaign=wallet_microsite&utm_id=1"
       >
         <svg
@@ -2047,32 +2163,32 @@ exports[`disable nft on landing page does not render nft information and card 1`
       </a>
     </div>
     <div
-      class="c61"
+      class="c65"
     >
       <div
-        class="c62"
+        class="c66"
         cols="1"
       >
         <a
-          class="c63"
-          href="#/swap"
+          class="c67"
+          href="/swap"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Swap tokens
             </div>
           </div>
           <div
-            class="c66"
+            class="c70"
             type="Primary"
           >
             Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more.
             <div
-              class="c66 c67"
+              class="c70 c71"
               type="Primary"
             >
               Trade Tokens
@@ -2081,20 +2197,20 @@ exports[`disable nft on landing page does not render nft information and card 1`
         </a>
       </div>
       <div
-        class="c68"
+        class="c72"
         cols="3"
       >
         <a
-          class="c69"
+          class="c73"
           href="https://support.uniswap.org/hc/en-us/articles/11306574799117-How-to-use-Moon-Pay-on-the-Uniswap-web-app-"
           rel="noopenener noreferrer"
           target="_blank"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Buy crypto
             </div>
@@ -2121,12 +2237,12 @@ exports[`disable nft on landing page does not render nft information and card 1`
             </svg>
           </div>
           <div
-            class="c70"
+            class="c74"
             type="Secondary"
           >
             Buy crypto with your credit card or bank account at the best rates.
             <div
-              class="c70 c67"
+              class="c74 c71"
               type="Secondary"
             >
               Buy now
@@ -2134,30 +2250,30 @@ exports[`disable nft on landing page does not render nft information and card 1`
           </div>
         </a>
         <a
-          class="c69"
-          href="#/pools"
+          class="c73"
+          href="/pools"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Earn
             </div>
             <img
               alt="Analytics"
-              class="c71"
+              class="c75"
               src="aboutArrowLight.png"
             />
           </div>
           <div
-            class="c70"
+            class="c74"
             type="Secondary"
           >
             Provide liquidity to pools on Uniswap and earn fees on swaps.
             <div
-              class="c70 c67"
+              class="c74 c71"
               type="Secondary"
             >
               Provide liquidity
@@ -2165,16 +2281,16 @@ exports[`disable nft on landing page does not render nft information and card 1`
           </div>
         </a>
         <a
-          class="c69"
+          class="c73"
           href="https://docs.uniswap.org"
           rel="noopenener noreferrer"
           target="_blank"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Build dApps
             </div>
@@ -2201,12 +2317,12 @@ exports[`disable nft on landing page does not render nft information and card 1`
             </svg>
           </div>
           <div
-            class="c70"
+            class="c74"
             type="Secondary"
           >
             Build apps and tools on the largest DeFi protocol on Ethereum.
             <div
-              class="c70 c67"
+              class="c74 c71"
               type="Secondary"
             >
               Developer docs
@@ -2215,27 +2331,27 @@ exports[`disable nft on landing page does not render nft information and card 1`
         </a>
       </div>
       <div
-        class="c72"
+        class="c76"
       >
         <div
-          class="c73"
+          class="c77"
         >
           <div
-            class="c74"
+            class="c78"
           >
             Powered by the Uniswap Protocol
           </div>
           <div
-            class="c75"
+            class="c79"
           >
             The leading decentralized crypto trading protocol, governed by a global community.
           </div>
         </div>
         <div
-          class="c76"
+          class="c80"
         >
           <a
-            class="c77 c78 c79"
+            class="c81 c82 c83"
             href="https://uniswap.org"
             rel="noopener noreferrer"
             target="_blank"
@@ -2246,53 +2362,53 @@ exports[`disable nft on landing page does not render nft information and card 1`
         </div>
       </div>
       <div
-        class="c80"
+        class="c84"
       >
         <div
-          class="c81 c82"
+          class="c85 c86"
         >
           <img
             alt="Uniswap Logo"
-            class="c83"
+            class="c87"
             src="unicornEmbossLight.png"
           />
           <div
-            class="c84"
+            class="c88"
           >
             <a
-              class="c85"
+              class="c89"
               href="https://discord.gg/FCfyBSbCU5"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c86"
+                class="c90"
                 size="32"
               >
                 discord.svg
               </svg>
             </a>
             <a
-              class="c85"
+              class="c89"
               href="https://twitter.com/uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c87"
+                class="c91"
                 size="32"
               >
                 twitter-safe.svg
               </svg>
             </a>
             <a
-              class="c85"
+              class="c89"
               href="https://github.com/Uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c88"
+                class="c92"
                 size="32"
               >
                 github.svg
@@ -2300,7 +2416,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
             </a>
           </div>
           <span
-            class="c89"
+            class="c93"
           >
             © 
             2023
@@ -2308,45 +2424,45 @@ exports[`disable nft on landing page does not render nft information and card 1`
           </span>
         </div>
         <div
-          class="c90"
+          class="c94"
         >
           <div
-            class="c91"
+            class="c95"
           >
             <span
-              class="c92"
+              class="c96"
             >
               App
             </span>
             <a
-              class="c93 c94"
-              href="#/swap"
+              class="c97 c98"
+              href="/swap"
             >
               Swap
             </a>
             <a
-              class="c93 c94"
-              href="#/tokens"
+              class="c97 c98"
+              href="/tokens"
             >
               Tokens
             </a>
             <a
-              class="c93 c94"
-              href="#/pools"
+              class="c97 c98"
+              href="/pools"
             >
               Pools
             </a>
           </div>
           <div
-            class="c91"
+            class="c95"
           >
             <span
-              class="c92"
+              class="c96"
             >
               Protocol
             </span>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://uniswap.org/community"
               rel="noopener noreferrer"
               target="_blank"
@@ -2354,7 +2470,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
               Community
             </a>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://uniswap.org/governance"
               rel="noopener noreferrer"
               target="_blank"
@@ -2362,7 +2478,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
               Governance
             </a>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://uniswap.org/developers"
               rel="noopener noreferrer"
               target="_blank"
@@ -2371,15 +2487,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
             </a>
           </div>
           <div
-            class="c91"
+            class="c95"
           >
             <span
-              class="c92"
+              class="c96"
             >
               Company
             </span>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://boards.greenhouse.io/uniswaplabs"
               rel="noopener noreferrer"
               target="_blank"
@@ -2387,7 +2503,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
               Careers
             </a>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://uniswap.org/blog"
               rel="noopener noreferrer"
               target="_blank"
@@ -2396,15 +2512,15 @@ exports[`disable nft on landing page does not render nft information and card 1`
             </a>
           </div>
           <div
-            class="c91"
+            class="c95"
           >
             <span
-              class="c92"
+              class="c96"
             >
               Get Help
             </span>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://support.uniswap.org/hc/en-us/requests/new"
               rel="noopener noreferrer"
               target="_blank"
@@ -2412,7 +2528,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
               Contact Us
             </a>
             <a
-              class="c95 c96"
+              class="c99 c100"
               href="https://support.uniswap.org/hc/en-us"
               rel="noopener noreferrer"
               target="_blank"
@@ -2422,50 +2538,50 @@ exports[`disable nft on landing page does not render nft information and card 1`
           </div>
         </div>
         <div
-          class="c81 c97"
+          class="c85 c101"
         >
           <img
             alt="Uniswap Logo"
-            class="c83"
+            class="c87"
             src="unicornEmbossLight.png"
           />
           <div
-            class="c84"
+            class="c88"
           >
             <a
-              class="c85"
+              class="c89"
               href="https://discord.gg/FCfyBSbCU5"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c86"
+                class="c90"
                 size="32"
               >
                 discord.svg
               </svg>
             </a>
             <a
-              class="c85"
+              class="c89"
               href="https://twitter.com/uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c87"
+                class="c91"
                 size="32"
               >
                 twitter-safe.svg
               </svg>
             </a>
             <a
-              class="c85"
+              class="c89"
               href="https://github.com/Uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c88"
+                class="c92"
                 size="32"
               >
                 github.svg
@@ -2473,7 +2589,7 @@ exports[`disable nft on landing page does not render nft information and card 1`
             </a>
           </div>
           <span
-            class="c89"
+            class="c93"
           >
             © 
             2023
@@ -2487,13 +2603,13 @@ exports[`disable nft on landing page does not render nft information and card 1`
 `;
 
 exports[`disable nft on landing page renders nft information and card 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
 }
 
-.c24 {
+.c15 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -2516,7 +2632,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   border-radius: 4px;
 }
 
-.c43 {
+.c47 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -2540,7 +2656,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   font-weight: 535;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2557,28 +2673,28 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   justify-content: flex-start;
 }
 
-.c8 {
+.c9 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.c10 {
+.c11 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.c12 {
+.c13 {
   color: #222222;
 }
 
-.c20 {
+.c26 {
   color: #7D7D7D;
 }
 
-.c96 {
+.c100 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2589,15 +2705,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   font-weight: 500;
 }
 
-.c96:hover {
+.c100:hover {
   opacity: 0.6;
 }
 
-.c96:active {
+.c100:active {
   opacity: 0.4;
 }
 
-.c94 {
+.c98 {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2608,36 +2724,36 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   font-weight: 500;
 }
 
-.c94:hover {
+.c98:hover {
   opacity: 0.6;
 }
 
-.c94:active {
+.c98:active {
   opacity: 0.4;
 }
 
-.c87 {
+.c91 {
   height: 32px;
   width: 32px;
   fill: #98A1C0;
   opacity: 1;
 }
 
-.c88 {
+.c92 {
   height: 32px;
   width: 32px;
   fill: #98A1C0;
   opacity: 1;
 }
 
-.c89 {
+.c93 {
   height: 32px;
   width: 32px;
   fill: #98A1C0;
   opacity: 1;
 }
 
-.c81 {
+.c85 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2650,7 +2766,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   max-width: 1440px;
 }
 
-.c82 {
+.c86 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2660,24 +2776,24 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   flex-direction: column;
 }
 
-.c83 {
+.c87 {
   display: none;
 }
 
-.c98 {
+.c102 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c84 {
+.c88 {
   width: 72px;
   height: 72px;
   display: none;
 }
 
-.c85 {
+.c89 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2690,20 +2806,20 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   margin: 20px 0 0 0;
 }
 
-.c86 {
+.c90 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c91 {
+.c95 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
 
-.c92 {
+.c96 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2716,32 +2832,32 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   margin: 20px 0 0 0;
 }
 
-.c93 {
+.c97 {
   font-size: 16px;
   line-height: 20px;
   font-weight: 535;
 }
 
-.c97 {
+.c101 {
   font-size: 16px;
   line-height: 20px;
   color: #7D7D7D;
 }
 
-.c95 {
+.c99 {
   font-size: 16px;
   line-height: 20px;
   color: #7D7D7D;
 }
 
-.c90 {
+.c94 {
   font-size: 16px;
   line-height: 20px;
   margin: 1rem 0 0 0;
   color: #CECECE;
 }
 
-.c63 {
+.c67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2769,11 +2885,11 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: 250ms ease border;
 }
 
-.c63:hover {
+.c67:hover {
   border: 1px solid #CECECE;
 }
 
-.c68 {
+.c72 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2801,11 +2917,11 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: 250ms ease border;
 }
 
-.c68:hover {
+.c72:hover {
   border: 1px solid #CECECE;
 }
 
-.c70 {
+.c74 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2833,11 +2949,11 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: 250ms ease border;
 }
 
-.c70:hover {
+.c74:hover {
   border: 1px solid #CECECE;
 }
 
-.c64 {
+.c68 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2852,13 +2968,13 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   justify-content: space-between;
 }
 
-.c65 {
+.c69 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 535;
 }
 
-.c66 {
+.c70 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2873,7 +2989,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   max-width: 480px;
 }
 
-.c71 {
+.c75 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2888,7 +3004,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   max-width: 480px;
 }
 
-.c67 {
+.c71 {
   color: #FC72FF;
   font-weight: 535;
   margin: 24px 0 0;
@@ -2897,18 +3013,18 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: 250ms ease opacity;
 }
 
-.c67:hover {
+.c71:hover {
   opacity: 0.6;
 }
 
-.c72 {
+.c76 {
   min-width: 20px;
   min-height: 20px;
   max-height: 48px;
   max-width: 48px;
 }
 
-.c46 {
+.c50 {
   background-color: transparent;
   bottom: 0;
   border-radius: inherit;
@@ -2922,7 +3038,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   width: 100%;
 }
 
-.c25 {
+.c16 {
   padding: 16px;
   width: 100%;
   line-height: 24px;
@@ -2961,25 +3077,25 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transform: perspective(1px) translateZ(0);
 }
 
-.c25:disabled {
+.c16:disabled {
   opacity: 50%;
   cursor: auto;
   pointer-events: none;
 }
 
-.c25 > * {
+.c16 > * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.c25 > a {
+.c16 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c78 {
+.c82 {
   padding: 16px;
   width: 200px;
   line-height: 24px;
@@ -3018,58 +3134,58 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transform: perspective(1px) translateZ(0);
 }
 
-.c78:disabled {
+.c82:disabled {
   opacity: 50%;
   cursor: auto;
   pointer-events: none;
 }
 
-.c78 > * {
+.c82 > * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.c78 > a {
+.c82 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c44 {
+.c48 {
   background-color: #FFEFFF;
   color: #FC72FF;
   font-size: 20px;
   font-weight: 535;
 }
 
-.c44:focus {
+.c48:focus {
   box-shadow: 0 0 0 1pt #FFEFFF;
   background-color: #FFEFFF;
 }
 
-.c44:hover {
+.c48:hover {
   background-color: #FFEFFF;
 }
 
-.c44:active {
+.c48:active {
   box-shadow: 0 0 0 1pt #FFEFFF;
   background-color: #FFEFFF;
 }
 
-.c44:hover .c45 {
+.c48:hover .c49 {
   background-color: #98A1C014;
 }
 
-.c44:active .c45 {
+.c48:active .c49 {
   background-color: #B8C0DC3d;
 }
 
-.c44:disabled {
+.c48:disabled {
   opacity: 0.4;
 }
 
-.c44:disabled:hover {
+.c48:disabled:hover {
   cursor: auto;
   background-color: transparent;
   box-shadow: none;
@@ -3077,7 +3193,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   outline: none;
 }
 
-.c26 {
+.c30 {
   background-color: #FFFFFF;
   color: #7D7D7D;
   border: 1px solid #22222212;
@@ -3085,15 +3201,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   font-weight: 535;
 }
 
-.c26:hover {
+.c30:hover {
   background-color: #ececec;
 }
 
-.c26:active {
+.c30:active {
   background-color: #e0e0e0;
 }
 
-.c79 {
+.c83 {
   background-color: transparent;
   color: #FC72FF;
   display: -webkit-box;
@@ -3110,27 +3226,56 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   align-items: center;
 }
 
-.c79:focus {
+.c83:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c79:hover {
+.c83:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c79:active {
+.c83:active {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c79:disabled {
+.c83:disabled {
   opacity: 50%;
   cursor: auto;
 }
 
-.c73 {
+.c17 {
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c17:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c17:hover {
+  opacity: 0.9;
+}
+
+.c17:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c17:disabled {
+  opacity: 50%;
+  cursor: auto;
+}
+
+.c77 {
   height: 340px;
   width: 100%;
   border-radius: 32px;
@@ -3156,7 +3301,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   background: url(Mesh.png),linear-gradient(93.06deg,#FF00C7 2.66%,#FF9FFB 98.99%);
 }
 
-.c74 {
+.c78 {
   color: white;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3170,20 +3315,20 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   flex-direction: column;
 }
 
-.c75 {
+.c79 {
   font-weight: 535;
   font-size: 28px;
   line-height: 36px;
 }
 
-.c76 {
+.c80 {
   margin: 10px 10px 0 0;
   font-weight: 535;
   font-size: 16px;
   line-height: 20px;
 }
 
-.c77 {
+.c81 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3197,22 +3342,22 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: 250ms ease opacity;
 }
 
-.c77:hover {
+.c81:hover {
   opacity: 0.6;
 }
 
-.c80 {
+.c84 {
   color: white;
   border: 1px solid white;
 }
 
-.c39 {
+.c43 {
   display: grid;
   grid-auto-rows: auto;
   grid-row-gap: 4px;
 }
 
-.c36 {
+.c40 {
   -webkit-filter: none;
   filter: none;
   opacity: 1;
@@ -3220,7 +3365,12 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: opacity 250ms ease-in-out;
 }
 
-.c31 {
+.c14 {
+  display: inline-block;
+  height: inherit;
+}
+
+.c35 {
   opacity: 0;
   -webkit-transition: opacity 250ms ease-in;
   transition: opacity 250ms ease-in;
@@ -3229,7 +3379,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   border-radius: 50%;
 }
 
-.c30 {
+.c34 {
   width: 24px;
   height: 24px;
   background: #22222212;
@@ -3239,7 +3389,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   border-radius: 50%;
 }
 
-.c29 {
+.c33 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3247,8 +3397,9 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   display: flex;
 }
 
-.c22 {
+.c28 {
   color: #222222;
+  pointer-events: auto;
   width: 0;
   position: relative;
   font-weight: 485;
@@ -3267,36 +3418,36 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   text-align: right;
 }
 
-.c22::-webkit-search-decoration {
+.c28::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.c22 [type='number'] {
+.c28 [type='number'] {
   -moz-appearance: textfield;
 }
 
-.c22::-webkit-outer-spin-button,
-.c22::-webkit-inner-spin-button {
+.c28::-webkit-outer-spin-button,
+.c28::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.c22::-webkit-input-placeholder {
+.c28::-webkit-input-placeholder {
   color: #CECECE;
 }
 
-.c22::-moz-placeholder {
+.c28::-moz-placeholder {
   color: #CECECE;
 }
 
-.c22:-ms-input-placeholder {
+.c28:-ms-input-placeholder {
   color: #CECECE;
 }
 
-.c22::placeholder {
+.c28::placeholder {
   color: #CECECE;
 }
 
-.c18 {
+.c24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3313,13 +3464,13 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   will-change: height;
 }
 
-.c19 {
+.c25 {
   min-height: 44px;
   border-radius: 20px;
   width: initial;
 }
 
-.c27 {
+.c31 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3328,8 +3479,8 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   opacity: 1;
   color: #222222;
   cursor: pointer;
-  height: unset;
-  border-radius: 16px;
+  height: 36px;
+  border-radius: 18px;
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3348,14 +3499,16 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   margin-left: 12px;
   box-shadow: 0px 0px 10px 0px rgba(34,34,34,0.04);
   visibility: visible;
+  -webkit-animation: none;
+  animation: none;
 }
 
-.c27:hover,
-.c27:active {
+.c31:hover,
+.c31:active {
   background-color: #F9F9F9;
 }
 
-.c27:before {
+.c31:before {
   background-size: 100%;
   border-radius: inherit;
   position: absolute;
@@ -3366,15 +3519,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   content: '';
 }
 
-.c27:hover:before {
+.c31:hover:before {
   background-color: #98A1C014;
 }
 
-.c27:active:before {
+.c31:active:before {
   background-color: #B8C0DC3d;
 }
 
-.c41 {
+.c45 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3383,8 +3536,8 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   opacity: 1;
   color: #FFFFFF;
   cursor: pointer;
-  height: unset;
-  border-radius: 16px;
+  height: 36px;
+  border-radius: 18px;
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3403,14 +3556,16 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   margin-left: 12px;
   box-shadow: 0px 0px 10px 0px rgba(34,34,34,0.04);
   visibility: visible;
+  -webkit-animation: none;
+  animation: none;
 }
 
-.c41:hover,
-.c41:active {
+.c45:hover,
+.c45:active {
   background-color: #FC72FF;
 }
 
-.c41:before {
+.c45:before {
   background-size: 100%;
   border-radius: inherit;
   position: absolute;
@@ -3421,15 +3576,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   content: '';
 }
 
-.c41:hover:before {
+.c45:hover:before {
   background-color: #98A1C014;
 }
 
-.c41:active:before {
+.c45:active:before {
   background-color: #B8C0DC3d;
 }
 
-.c21 {
+.c27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3447,7 +3602,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   justify-content: space-between;
 }
 
-.c34 {
+.c38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3464,12 +3619,12 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   line-height: 1rem;
 }
 
-.c34 span:hover {
+.c38 span:hover {
   cursor: pointer;
   color: #4a4a4a;
 }
 
-.c35 {
+.c39 {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -3478,7 +3633,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   padding: 8px 0px 0px 0px;
 }
 
-.c28 {
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3494,35 +3649,35 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   width: 100%;
 }
 
-.c33 {
+.c37 {
   margin: 0 0.25rem 0 0.35rem;
   height: 35%;
   margin-left: 8px;
 }
 
-.c33 path {
+.c37 path {
   stroke: #222222;
   stroke-width: 2px;
 }
 
-.c42 {
+.c46 {
   margin: 0 0.25rem 0 0.35rem;
   height: 35%;
   margin-left: 8px;
 }
 
-.c42 path {
+.c46 path {
   stroke: #FFFFFF;
   stroke-width: 2px;
 }
 
-.c32 {
+.c36 {
   margin: 0 0.25rem 0 0.25rem;
   font-size: 20px;
   font-weight: 535;
 }
 
-.c23 {
+.c29 {
   -webkit-filter: none;
   filter: none;
   opacity: 1;
@@ -3542,23 +3697,44 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 
 .c4 {
   position: relative;
-  background: #FFFFFF;
-  border-radius: 24px;
-  border: 1px solid #22222212;
-  padding: 8px;
-  padding-top: 12px;
-  box-shadow: 0px 0px 10px 0px rgba(252,114,255,0.04),0px 40px 120px 0px rgba(252,114,255,0.12);
   z-index: 1;
+  border: 1px solid #22222212;
   -webkit-transition: -webkit-transform 250ms ease;
   -webkit-transition: transform 250ms ease;
   transition: transform 250ms ease;
+  border-radius: 24px;
+}
+
+.c4:before {
+  content: ' ';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  inset: 0;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  background-color: rgba(252,114,255,0.075);
+  z-index: -2;
 }
 
 .c4:hover {
   border: 1px solid #22222212;
 }
 
-.c37 {
+.c6 {
+  border-radius: 24px;
+  background: #FFFFFF;
+  z-index: -1;
+  padding: 8px;
+  padding-top: 12px;
+}
+
+.c41 {
   border-radius: 12px;
   height: 40px;
   width: 40px;
@@ -3573,21 +3749,21 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   z-index: 2;
 }
 
-.c37:hover {
+.c41:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-.c16 {
+.c22 {
   height: 24px;
   width: 24px;
 }
 
-.c16 > * {
+.c22 > * {
   fill: #7D7D7D;
 }
 
-.c14 {
+.c20 {
   border: none;
   background-color: transparent;
   margin: 0;
@@ -3596,30 +3772,48 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   outline: none;
 }
 
-.c14:not([disabled]):hover {
+.c20:not([disabled]):hover {
   opacity: 0.7;
 }
 
-.c15 {
+.c21 {
   padding: 6px 12px;
   border-radius: 16px;
 }
 
-.c13 {
+.c19 {
   position: relative;
 }
 
-.c9 {
+.c18 {
+  -webkit-animation: iAjNNh 125ms ease-in;
+  animation: iAjNNh 125ms ease-in;
+  color: #7D7D7D;
+  gap: 4px;
+  font-weight: 485;
+}
+
+.c18:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c18:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 {
   margin-bottom: 10px;
   color: #7D7D7D;
 }
 
-.c11 {
+.c12 {
   padding: 0 12px;
   gap: 16px;
 }
 
-.c38 {
+.c42 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3636,7 +3830,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   height: 100%;
 }
 
-.c17 {
+.c23 {
   background-color: #F9F9F9;
   border-radius: 16px;
   color: #7D7D7D;
@@ -3648,7 +3842,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   position: relative;
 }
 
-.c17:before {
+.c23:before {
   box-sizing: border-box;
   background-size: 100%;
   border-radius: inherit;
@@ -3662,15 +3856,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   border: 1px solid #F9F9F9;
 }
 
-.c17:hover:before {
+.c23:hover:before {
   border-color: #98A1C014;
 }
 
-.c17:focus-within:before {
+.c23:focus-within:before {
   border-color: #B8C0DC3d;
 }
 
-.c40 {
+.c44 {
   border-bottom: 1px solid #FFFFFF;
 }
 
@@ -3697,7 +3891,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   overflow-x: hidden;
 }
 
-.c47 {
+.c51 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3721,7 +3915,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   height: calc(100vh - 48px);
 }
 
-.c48 {
+.c52 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3742,7 +3936,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   height: calc(100vh - 48px);
 }
 
-.c49 {
+.c53 {
   position: absolute;
   top: 68px;
   bottom: 0;
@@ -3755,7 +3949,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   height: 100%;
 }
 
-.c50 {
+.c54 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3783,11 +3977,31 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   pointer-events: none;
 }
 
-.c50 * {
+.c54 * {
   pointer-events: auto;
 }
 
-.c51 {
+.c64 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 24px;
+  color: #7D7D7D;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 535;
+  text-align: center;
+}
+
+.c64:hover {
+  color: #CECECE;
+}
+
+.c55 {
   color: transparent;
   font-size: 36px;
   line-height: 44px;
@@ -3797,9 +4011,11 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   background: linear-gradient(10deg,rgba(255,79,184,1) 0%,rgba(255,159,251,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-animation: iAjNNh 125ms ease-in;
+  animation: iAjNNh 125ms ease-in;
 }
 
-.c53 {
+.c57 {
   color: #7D7D7D;
   font-size: 16px;
   line-height: 24px;
@@ -3809,7 +4025,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   margin: 0 0 32px;
 }
 
-.c52 {
+.c56 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3818,14 +4034,16 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-animation: iAjNNh 125ms ease-in;
+  animation: iAjNNh 125ms ease-in;
 }
 
-.c55 {
+.c59 {
   padding: 16px 0px;
   border-radius: 24px;
 }
 
-.c56 {
+.c60 {
   background: linear-gradient(93.06deg,#ff00c7 2.66%,#ff9ffb 98.99%);
   border: none;
   color: #FFFFFF;
@@ -3833,24 +4051,24 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: all 250ms ease;
 }
 
-.c56:hover {
+.c60:hover {
   box-shadow: 0px 0px 16px 0px #ff00c7;
 }
 
-.c57 {
+.c61 {
   margin: 0px;
   font-size: 16px;
   font-weight: 535;
   white-space: nowrap;
 }
 
-.c54 {
+.c58 {
   max-width: 300px;
   width: 100%;
   pointer-events: auto;
 }
 
-.c58 {
+.c62 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3870,16 +4088,16 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   transition: 250ms ease opacity;
 }
 
-.c58:hover {
+.c62:hover {
   opacity: 0.6;
 }
 
-.c59 {
+.c63 {
   margin-left: 14px;
   size: 20px;
 }
 
-.c61 {
+.c65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3896,7 +4114,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   background: linear-gradient(179.82deg,rgba(255,255,255,0) 0.16%,#eaeaea 99.85%);
 }
 
-.c62 {
+.c66 {
   display: grid;
   gap: 12px;
   width: 100%;
@@ -3909,7 +4127,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   grid-template-columns: 1fr;
 }
 
-.c69 {
+.c73 {
   display: grid;
   gap: 12px;
   width: 100%;
@@ -3963,28 +4181,8 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
   width: 100%;
 }
 
-.c60 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  gap: 8px;
-  margin-top: 24px;
-  color: #7D7D7D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 535;
-  text-align: center;
-}
-
-.c60:hover {
-  color: #CECECE;
-}
-
 @media screen and (min-width:1024px) {
-  .c81 {
+  .c85 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -3996,7 +4194,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c83 {
+  .c87 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4005,75 +4203,75 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c98 {
+  .c102 {
     display: none;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c84 {
+  .c88 {
     display: block;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c91 {
+  .c95 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c92 {
+  .c96 {
     margin: 0;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c63 {
+  .c67 {
     height: 360px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c63 {
+  .c67 {
     padding: 32px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c68 {
+  .c72 {
     height: 360px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c68 {
+  .c72 {
     padding: 32px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c70 {
+  .c74 {
     height: 260px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c70 {
+  .c74 {
     padding: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c65 {
+  .c69 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c66 {
+  .c70 {
     font-size: 20px;
     line-height: 28px;
     max-width: 480px;
@@ -4081,7 +4279,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 }
 
 @media screen and (min-width:1280px) {
-  .c71 {
+  .c75 {
     font-size: 20px;
     line-height: 28px;
     max-width: 480px;
@@ -4089,7 +4287,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c73 {
+  .c77 {
     height: 140px;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -4098,21 +4296,21 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 }
 
 @media screen and (min-width:1280px) {
-  .c75 {
+  .c79 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
 @media screen and (min-width:1280px) {
-  .c76 {
+  .c80 {
     font-size: 20px;
     line-height: 28px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c77 {
+  .c81 {
     width: auto;
   }
 }
@@ -4130,79 +4328,79 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c47 {
+  .c51 {
     height: 100vh;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c48 {
+  .c52 {
     height: 100vh;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c51 {
+  .c55 {
     font-size: 48px;
     line-height: 56px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c51 {
+  .c55 {
     font-size: 64px;
     line-height: 72px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c53 {
+  .c57 {
     font-size: 20px;
     line-height: 28px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c57 {
+  .c61 {
     font-size: 20px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c58 {
+  .c62 {
     visibility: visible;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c61 {
+  .c65 {
     padding: 0 96px 5rem;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c62 {
+  .c66 {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c62 {
+  .c66 {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
 }
 
 @media screen and (min-width:640px) {
-  .c69 {
+  .c73 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c69 {
+  .c73 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
   }
@@ -4218,7 +4416,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
     >
       <a
         class="c2"
-        href="#/swap"
+        href="/swap"
       >
         <div
           class="c3"
@@ -4228,240 +4426,156 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             id="swap-page"
           >
             <div
-              class="c6 c7 c8 c9"
+              class="c6"
             >
               <div
-                class="c6 c7 c10 c11"
+                class="c7 c8 c9 c10"
               >
                 <div
-                  class="c12 css-n8z49y"
+                  class="c7 c8 c11 c12"
                 >
-                  Swap
-                </div>
-              </div>
-              <div
-                class="c6 c7 c10"
-              >
-                <div
-                  class="c13"
-                >
-                  <button
-                    aria-label="Transaction Settings"
-                    class="c14"
-                    data-testid="open-settings-dialog-button"
-                    id="open-settings-dialog-button"
+                  <div
+                    class="c13 css-n8z49y"
                   >
-                    <div
-                      class="c6 c7 c15"
-                    >
-                      <svg
-                        class="c16"
-                        fill="none"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
+                    Swap
+                  </div>
+                  <div
+                    class="c14"
+                  >
+                    <div>
+                      <button
+                        class="c15 c16 c17 c18"
+                        data-testid="buy-fiat-button"
                       >
-                        <path
-                          d="M20.83 14.6C19.9 14.06 19.33 13.07 19.33 12C19.33 10.93 19.9 9.93999 20.83 9.39999C20.99 9.29999 21.05 9.1 20.95 8.94L19.28 6.06C19.22 5.95 19.11 5.89001 19 5.89001C18.94 5.89001 18.88 5.91 18.83 5.94C18.37 6.2 17.85 6.34 17.33 6.34C16.8 6.34 16.28 6.19999 15.81 5.92999C14.88 5.38999 14.31 4.41 14.31 3.34C14.31 3.15 14.16 3 13.98 3H10.02C9.83999 3 9.69 3.15 9.69 3.34C9.69 4.41 9.12 5.38999 8.19 5.92999C7.72 6.19999 7.20001 6.34 6.67001 6.34C6.15001 6.34 5.63001 6.2 5.17001 5.94C5.01001 5.84 4.81 5.9 4.72 6.06L3.04001 8.94C3.01001 8.99 3 9.05001 3 9.10001C3 9.22001 3.06001 9.32999 3.17001 9.39999C4.10001 9.93999 4.67001 10.92 4.67001 11.99C4.67001 13.07 4.09999 14.06 3.17999 14.6H3.17001C3.01001 14.7 2.94999 14.9 3.04999 15.06L4.72 17.94C4.78 18.05 4.89 18.11 5 18.11C5.06 18.11 5.12001 18.09 5.17001 18.06C6.11001 17.53 7.26 17.53 8.19 18.07C9.11 18.61 9.67999 19.59 9.67999 20.66C9.67999 20.85 9.82999 21 10.02 21H13.98C14.16 21 14.31 20.85 14.31 20.66C14.31 19.59 14.88 18.61 15.81 18.07C16.28 17.8 16.8 17.66 17.33 17.66C17.85 17.66 18.37 17.8 18.83 18.06C18.99 18.16 19.19 18.1 19.28 17.94L20.96 15.06C20.99 15.01 21 14.95 21 14.9C21 14.78 20.94 14.67 20.83 14.6ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z"
-                          fill="currentColor"
-                        />
-                      </svg>
+                        Buy
+                      </button>
                     </div>
-                  </button>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div
-              style="display: relative;"
-            >
-              <div
-                class="c17"
-              >
                 <div
-                  class="c18"
-                  id="swap-currency-input"
+                  class="c7 c8 c11"
                 >
                   <div
                     class="c19"
                   >
-                    <div
-                      class="c20 css-142zc9n"
-                      style="user-select: none;"
-                    >
-                      You pay
-                    </div>
-                    <div
-                      class="c21"
-                    >
-                      <input
-                        autocomplete="off"
-                        autocorrect="off"
-                        class="c22 c23 token-amount-input"
-                        inputmode="decimal"
-                        maxlength="79"
-                        minlength="1"
-                        pattern="^[0-9]*[.,]?[0-9]*$"
-                        placeholder="0"
-                        spellcheck="false"
-                        type="text"
-                        value=""
-                      />
-                      <div>
-                        <button
-                          class="c24 c25 c26 c27 open-currency-select-button"
-                        >
-                          <span
-                            class="c28"
-                          >
-                            <div
-                              class="c6 c7 c10"
-                            >
-                              <div
-                                class="c29"
-                                style="height: 24px; width: 24px; margin-right: 2px;"
-                              >
-                                <div
-                                  class="c30"
-                                >
-                                  <img
-                                    alt="ETH logo"
-                                    class="c31"
-                                    src="ethereum-logo.png"
-                                  />
-                                </div>
-                              </div>
-                              <span
-                                class="c32 token-symbol-container"
-                              >
-                                ETH
-                              </span>
-                            </div>
-                            <svg
-                              class="c33"
-                            >
-                              dropdown.svg
-                            </svg>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      class="c34 c35"
+                    <button
+                      aria-label="Transaction Settings"
+                      class="c20"
+                      data-testid="open-settings-dialog-button"
+                      id="open-settings-dialog-button"
                     >
                       <div
-                        class="c6 c7 c8"
+                        class="c7 c8 c21"
                       >
-                        <div
-                          class="c36"
-                        />
-                        <span />
+                        <svg
+                          class="c22"
+                          fill="none"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.83 14.6C19.9 14.06 19.33 13.07 19.33 12C19.33 10.93 19.9 9.93999 20.83 9.39999C20.99 9.29999 21.05 9.1 20.95 8.94L19.28 6.06C19.22 5.95 19.11 5.89001 19 5.89001C18.94 5.89001 18.88 5.91 18.83 5.94C18.37 6.2 17.85 6.34 17.33 6.34C16.8 6.34 16.28 6.19999 15.81 5.92999C14.88 5.38999 14.31 4.41 14.31 3.34C14.31 3.15 14.16 3 13.98 3H10.02C9.83999 3 9.69 3.15 9.69 3.34C9.69 4.41 9.12 5.38999 8.19 5.92999C7.72 6.19999 7.20001 6.34 6.67001 6.34C6.15001 6.34 5.63001 6.2 5.17001 5.94C5.01001 5.84 4.81 5.9 4.72 6.06L3.04001 8.94C3.01001 8.99 3 9.05001 3 9.10001C3 9.22001 3.06001 9.32999 3.17001 9.39999C4.10001 9.93999 4.67001 10.92 4.67001 11.99C4.67001 13.07 4.09999 14.06 3.17999 14.6H3.17001C3.01001 14.7 2.94999 14.9 3.04999 15.06L4.72 17.94C4.78 18.05 4.89 18.11 5 18.11C5.06 18.11 5.12001 18.09 5.17001 18.06C6.11001 17.53 7.26 17.53 8.19 18.07C9.11 18.61 9.67999 19.59 9.67999 20.66C9.67999 20.85 9.82999 21 10.02 21H13.98C14.16 21 14.31 20.85 14.31 20.66C14.31 19.59 14.88 18.61 15.81 18.07C16.28 17.8 16.8 17.66 17.33 17.66C17.85 17.66 18.37 17.8 18.83 18.06C18.99 18.16 19.19 18.1 19.28 17.94L20.96 15.06C20.99 15.01 21 14.95 21 14.9C21 14.78 20.94 14.67 20.83 14.6ZM12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15Z"
+                            fill="currentColor"
+                          />
+                        </svg>
                       </div>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
               <div
-                class="c37"
+                style="display: relative;"
               >
                 <div
-                  class="c38"
-                  color="#222222"
-                  data-testid="swap-currency-button"
-                >
-                  <svg
-                    fill="none"
-                    height="16"
-                    stroke="#222222"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <line
-                      x1="12"
-                      x2="12"
-                      y1="5"
-                      y2="19"
-                    />
-                    <polyline
-                      points="19 12 12 19 5 12"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div
-              class="c39"
-            >
-              <div>
-                <div
-                  class="c17 c40"
+                  class="c23"
                 >
                   <div
-                    class="c18"
-                    id="swap-currency-output"
+                    class="c24"
+                    id="swap-currency-input"
                   >
                     <div
-                      class="c19"
+                      class="c25"
                     >
                       <div
-                        class="c20 css-142zc9n"
+                        class="c26 css-142zc9n"
                         style="user-select: none;"
                       >
-                        You receive
+                        You pay
                       </div>
                       <div
-                        class="c21"
+                        class="c27"
                       >
-                        <input
-                          autocomplete="off"
-                          autocorrect="off"
-                          class="c22 c23 token-amount-input"
-                          inputmode="decimal"
-                          maxlength="79"
-                          minlength="1"
-                          pattern="^[0-9]*[.,]?[0-9]*$"
-                          placeholder="0"
-                          spellcheck="false"
-                          type="text"
-                          value=""
-                        />
+                        <div
+                          style="display: flex; flex-grow: 1;"
+                        >
+                          <input
+                            autocomplete="off"
+                            autocorrect="off"
+                            class="c28 c29 token-amount-input"
+                            id="swap-currency-input"
+                            inputmode="decimal"
+                            maxlength="79"
+                            minlength="1"
+                            pattern="^[0-9]*[.,]?[0-9]*$"
+                            placeholder="0"
+                            spellcheck="false"
+                            type="text"
+                            value=""
+                          />
+                        </div>
                         <div>
-                          <button
-                            class="c24 c25 c26 c41 open-currency-select-button"
+                          <div
+                            class="c14"
                           >
-                            <span
-                              class="c28"
+                            <button
+                              class="c15 c16 c30 c31 open-currency-select-button"
                             >
-                              <div
-                                class="c6 c7 c10"
+                              <span
+                                class="c32"
                               >
-                                <span
-                                  class="c32 token-symbol-container"
+                                <div
+                                  class="c7 c8 c11"
                                 >
-                                  Select token
-                                </span>
-                              </div>
-                              <svg
-                                class="c42"
-                              >
-                                dropdown.svg
-                              </svg>
-                            </span>
-                          </button>
+                                  <div
+                                    class="c33"
+                                    style="height: 24px; width: 24px; margin-right: 2px;"
+                                  >
+                                    <div
+                                      class="c34"
+                                    >
+                                      <img
+                                        alt="ETH logo"
+                                        class="c35"
+                                        src="ethereum-logo.png"
+                                      />
+                                    </div>
+                                  </div>
+                                  <span
+                                    class="c36 token-symbol-container"
+                                  >
+                                    ETH
+                                  </span>
+                                </div>
+                                <svg
+                                  class="c37"
+                                >
+                                  dropdown.svg
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                       <div
-                        class="c34 c35"
+                        class="c38 c39"
                       >
                         <div
-                          class="c6 c7 c8"
+                          class="c7 c8 c9"
                         >
                           <div
-                            class="c36"
+                            class="c40"
                           />
                           <span />
                         </div>
@@ -4469,17 +4583,135 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
                     </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <button
-                  class="c43 c25 c44"
-                  font-weight="535"
+                <div
+                  class="c41"
                 >
                   <div
-                    class="c45 c46"
-                  />
-                  Connect Wallet
-                </button>
+                    class="c42"
+                    color="#222222"
+                    data-testid="swap-currency-button"
+                  >
+                    <svg
+                      fill="none"
+                      height="16"
+                      stroke="#222222"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="5"
+                        y2="19"
+                      />
+                      <polyline
+                        points="19 12 12 19 5 12"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c43"
+              >
+                <div>
+                  <div
+                    class="c23 c44"
+                  >
+                    <div
+                      class="c24"
+                      id="swap-currency-output"
+                    >
+                      <div
+                        class="c25"
+                      >
+                        <div
+                          class="c26 css-142zc9n"
+                          style="user-select: none;"
+                        >
+                          You receive
+                        </div>
+                        <div
+                          class="c27"
+                        >
+                          <div
+                            style="display: flex; flex-grow: 1;"
+                          >
+                            <input
+                              autocomplete="off"
+                              autocorrect="off"
+                              class="c28 c29 token-amount-input"
+                              id="swap-currency-output"
+                              inputmode="decimal"
+                              maxlength="79"
+                              minlength="1"
+                              pattern="^[0-9]*[.,]?[0-9]*$"
+                              placeholder="0"
+                              spellcheck="false"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                          <div>
+                            <div
+                              class="c14"
+                            >
+                              <button
+                                class="c15 c16 c30 c45 open-currency-select-button"
+                              >
+                                <span
+                                  class="c32"
+                                >
+                                  <div
+                                    class="c7 c8 c11"
+                                  >
+                                    <span
+                                      class="c36 token-symbol-container"
+                                    >
+                                      Select token
+                                    </span>
+                                  </div>
+                                  <svg
+                                    class="c46"
+                                  >
+                                    dropdown.svg
+                                  </svg>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="c38 c39"
+                        >
+                          <div
+                            class="c7 c8 c9"
+                          >
+                            <div
+                              class="c40"
+                            />
+                            <span />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="c47 c16 c48"
+                    font-weight="535"
+                  >
+                    <div
+                      class="c49 c50"
+                    />
+                    Connect wallet
+                  </button>
+                </div>
               </div>
             </div>
           </main>
@@ -4487,52 +4719,52 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
       </a>
     </div>
     <div
-      class="c47"
+      class="c51"
     />
     <div
-      class="c48"
+      class="c52"
     >
       <div
-        class="c49"
+        class="c53"
       />
     </div>
     <div
-      class="c50"
+      class="c54"
     >
       <h1
-        class="c51"
+        class="c55"
       >
         Trade crypto and NFTs with confidence
       </h1>
       <div
-        class="c52"
+        class="c56"
       >
         <div
-          class="c53"
+          class="c57"
         >
           Buy, sell, and explore tokens and NFTs
         </div>
       </div>
       <span
-        class="c54"
+        class="c58"
       >
         <a
-          class="c2 c25 c55 c56"
-          href="#/swap"
+          class="c2 c16 c59 c60"
+          href="/swap"
         >
           <p
-            class="c57"
+            class="c61"
           >
             Get started
           </p>
         </a>
       </span>
       <div
-        class="c58"
+        class="c62"
       >
         Learn more
         <svg
-          class="c59"
+          class="c63"
           fill="none"
           height="24"
           stroke="currentColor"
@@ -4560,7 +4792,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
         </svg>
       </div>
       <a
-        class="c60"
+        class="c64"
         href="https://wallet.uniswap.org/?utm_source=home_page&utm_medium=webapp&utm_campaign=wallet_microsite&utm_id=1"
       >
         <svg
@@ -4577,32 +4809,32 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
       </a>
     </div>
     <div
-      class="c61"
+      class="c65"
     >
       <div
-        class="c62"
+        class="c66"
         cols="2"
       >
         <a
-          class="c63"
-          href="#/swap"
+          class="c67"
+          href="/swap"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Swap tokens
             </div>
           </div>
           <div
-            class="c66"
+            class="c70"
             type="Primary"
           >
             Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more.
             <div
-              class="c66 c67"
+              class="c70 c71"
               type="Primary"
             >
               Trade Tokens
@@ -4610,25 +4842,25 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
           </div>
         </a>
         <a
-          class="c68"
-          href="#/nfts"
+          class="c72"
+          href="/nfts"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Trade NFTs
             </div>
           </div>
           <div
-            class="c66"
+            class="c70"
             type="Primary"
           >
             Buy and sell NFTs across marketplaces to find more listings at better prices.
             <div
-              class="c66 c67"
+              class="c70 c71"
               type="Primary"
             >
               Explore NFTs
@@ -4637,20 +4869,20 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
         </a>
       </div>
       <div
-        class="c69"
+        class="c73"
         cols="3"
       >
         <a
-          class="c70"
+          class="c74"
           href="https://support.uniswap.org/hc/en-us/articles/11306574799117-How-to-use-Moon-Pay-on-the-Uniswap-web-app-"
           rel="noopenener noreferrer"
           target="_blank"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Buy crypto
             </div>
@@ -4677,12 +4909,12 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             </svg>
           </div>
           <div
-            class="c71"
+            class="c75"
             type="Secondary"
           >
             Buy crypto with your credit card or bank account at the best rates.
             <div
-              class="c71 c67"
+              class="c75 c71"
               type="Secondary"
             >
               Buy now
@@ -4690,30 +4922,30 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
           </div>
         </a>
         <a
-          class="c70"
-          href="#/pools"
+          class="c74"
+          href="/pools"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Earn
             </div>
             <img
               alt="Analytics"
-              class="c72"
+              class="c76"
               src="aboutArrowLight.png"
             />
           </div>
           <div
-            class="c71"
+            class="c75"
             type="Secondary"
           >
             Provide liquidity to pools on Uniswap and earn fees on swaps.
             <div
-              class="c71 c67"
+              class="c75 c71"
               type="Secondary"
             >
               Provide liquidity
@@ -4721,16 +4953,16 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
           </div>
         </a>
         <a
-          class="c70"
+          class="c74"
           href="https://docs.uniswap.org"
           rel="noopenener noreferrer"
           target="_blank"
         >
           <div
-            class="c64"
+            class="c68"
           >
             <div
-              class="c65"
+              class="c69"
             >
               Build dApps
             </div>
@@ -4757,12 +4989,12 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             </svg>
           </div>
           <div
-            class="c71"
+            class="c75"
             type="Secondary"
           >
             Build apps and tools on the largest DeFi protocol on Ethereum.
             <div
-              class="c71 c67"
+              class="c75 c71"
               type="Secondary"
             >
               Developer docs
@@ -4771,27 +5003,27 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
         </a>
       </div>
       <div
-        class="c73"
+        class="c77"
       >
         <div
-          class="c74"
+          class="c78"
         >
           <div
-            class="c75"
+            class="c79"
           >
             Powered by the Uniswap Protocol
           </div>
           <div
-            class="c76"
+            class="c80"
           >
             The leading decentralized crypto trading protocol, governed by a global community.
           </div>
         </div>
         <div
-          class="c77"
+          class="c81"
         >
           <a
-            class="c78 c79 c80"
+            class="c82 c83 c84"
             href="https://uniswap.org"
             rel="noopener noreferrer"
             target="_blank"
@@ -4802,53 +5034,53 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
         </div>
       </div>
       <div
-        class="c81"
+        class="c85"
       >
         <div
-          class="c82 c83"
+          class="c86 c87"
         >
           <img
             alt="Uniswap Logo"
-            class="c84"
+            class="c88"
             src="unicornEmbossLight.png"
           />
           <div
-            class="c85"
+            class="c89"
           >
             <a
-              class="c86"
+              class="c90"
               href="https://discord.gg/FCfyBSbCU5"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c87"
+                class="c91"
                 size="32"
               >
                 discord.svg
               </svg>
             </a>
             <a
-              class="c86"
+              class="c90"
               href="https://twitter.com/uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c88"
+                class="c92"
                 size="32"
               >
                 twitter-safe.svg
               </svg>
             </a>
             <a
-              class="c86"
+              class="c90"
               href="https://github.com/Uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c89"
+                class="c93"
                 size="32"
               >
                 github.svg
@@ -4856,7 +5088,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             </a>
           </div>
           <span
-            class="c90"
+            class="c94"
           >
             © 
             2023
@@ -4864,51 +5096,51 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
           </span>
         </div>
         <div
-          class="c91"
+          class="c95"
         >
           <div
-            class="c92"
+            class="c96"
           >
             <span
-              class="c93"
+              class="c97"
             >
               App
             </span>
             <a
-              class="c94 c95"
-              href="#/swap"
+              class="c98 c99"
+              href="/swap"
             >
               Swap
             </a>
             <a
-              class="c94 c95"
-              href="#/tokens"
+              class="c98 c99"
+              href="/tokens"
             >
               Tokens
             </a>
             <a
-              class="c94 c95"
-              href="#/nfts"
+              class="c98 c99"
+              href="/nfts"
             >
               NFTs
             </a>
             <a
-              class="c94 c95"
-              href="#/pools"
+              class="c98 c99"
+              href="/pools"
             >
               Pools
             </a>
           </div>
           <div
-            class="c92"
+            class="c96"
           >
             <span
-              class="c93"
+              class="c97"
             >
               Protocol
             </span>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://uniswap.org/community"
               rel="noopener noreferrer"
               target="_blank"
@@ -4916,7 +5148,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
               Community
             </a>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://uniswap.org/governance"
               rel="noopener noreferrer"
               target="_blank"
@@ -4924,7 +5156,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
               Governance
             </a>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://uniswap.org/developers"
               rel="noopener noreferrer"
               target="_blank"
@@ -4933,15 +5165,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             </a>
           </div>
           <div
-            class="c92"
+            class="c96"
           >
             <span
-              class="c93"
+              class="c97"
             >
               Company
             </span>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://boards.greenhouse.io/uniswaplabs"
               rel="noopener noreferrer"
               target="_blank"
@@ -4949,7 +5181,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
               Careers
             </a>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://uniswap.org/blog"
               rel="noopener noreferrer"
               target="_blank"
@@ -4958,15 +5190,15 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             </a>
           </div>
           <div
-            class="c92"
+            class="c96"
           >
             <span
-              class="c93"
+              class="c97"
             >
               Get Help
             </span>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://support.uniswap.org/hc/en-us/requests/new"
               rel="noopener noreferrer"
               target="_blank"
@@ -4974,7 +5206,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
               Contact Us
             </a>
             <a
-              class="c96 c97"
+              class="c100 c101"
               href="https://support.uniswap.org/hc/en-us"
               rel="noopener noreferrer"
               target="_blank"
@@ -4984,50 +5216,50 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
           </div>
         </div>
         <div
-          class="c82 c98"
+          class="c86 c102"
         >
           <img
             alt="Uniswap Logo"
-            class="c84"
+            class="c88"
             src="unicornEmbossLight.png"
           />
           <div
-            class="c85"
+            class="c89"
           >
             <a
-              class="c86"
+              class="c90"
               href="https://discord.gg/FCfyBSbCU5"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c87"
+                class="c91"
                 size="32"
               >
                 discord.svg
               </svg>
             </a>
             <a
-              class="c86"
+              class="c90"
               href="https://twitter.com/uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c88"
+                class="c92"
                 size="32"
               >
                 twitter-safe.svg
               </svg>
             </a>
             <a
-              class="c86"
+              class="c90"
               href="https://github.com/Uniswap"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                class="c89"
+                class="c93"
                 size="32"
               >
                 github.svg
@@ -5035,7 +5267,7 @@ exports[`disable nft on landing page renders nft information and card 1`] = `
             </a>
           </div>
           <span
-            class="c90"
+            class="c94"
           >
             © 
             2023

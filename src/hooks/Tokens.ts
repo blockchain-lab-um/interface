@@ -112,7 +112,7 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
 
     const listUrl = getChainInfo(chainId).defaultListUrl
 
-    const { current: list } = listsByUrl[listUrl]
+    const list = listsByUrl[listUrl]?.current
     if (!list) {
       return {}
     }
@@ -190,7 +190,7 @@ export function useToken(tokenAddress?: string | null): Token | null | undefined
   return useTokenFromMapOrNetwork(tokens, tokenAddress)
 }
 
-export function useCurrency(currencyId: Maybe<string>, chainId?: ChainId): Currency | null | undefined {
+export function useCurrency(currencyId: Maybe<string>, chainId?: ChainId): Currency | undefined {
   const { chainId: connectedChainId } = useWeb3React()
   const tokens = useDefaultActiveTokens(chainId ?? connectedChainId)
   return useCurrencyFromMap(tokens, chainId ?? connectedChainId, currencyId)

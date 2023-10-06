@@ -1,9 +1,8 @@
 import { Trans } from '@lingui/macro'
 import { Percent } from '@uniswap/sdk-core'
-import { useFiatOnRampButtonEnabled } from 'featureFlags/flags/fiatOnRampButton'
 import { InterfaceTrade } from 'state/routing/types'
 import styled from 'styled-components'
-import { ThemedText } from 'theme'
+import { ThemedText } from 'theme/components'
 
 import { RowBetween, RowFixed } from '../Row'
 import SettingsTab from '../Settings'
@@ -28,15 +27,13 @@ export default function SwapHeader({
   chainId?: number
   trade?: InterfaceTrade
 }) {
-  const fiatOnRampButtonEnabled = useFiatOnRampButtonEnabled()
-
   return (
     <StyledSwapHeader>
       <HeaderButtonContainer>
         <ThemedText.SubHeader>
           <Trans>Swap</Trans>
         </ThemedText.SubHeader>
-        {fiatOnRampButtonEnabled && <SwapBuyFiatButton />}
+        <SwapBuyFiatButton />
       </HeaderButtonContainer>
       <RowFixed>
         <SettingsTab autoSlippage={autoSlippage} chainId={chainId} trade={trade} />

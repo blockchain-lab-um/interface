@@ -96,6 +96,13 @@ export const DAI_OPTIMISM = new Token(
   'DAI',
   'Dai stable coin'
 )
+export const MATIC = new Token(
+  ChainId.MAINNET,
+  '0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0',
+  18,
+  'MATIC',
+  'Polygon Matic'
+)
 export const DAI_POLYGON = new Token(
   ChainId.POLYGON,
   '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063',
@@ -185,12 +192,12 @@ export const PORTAL_ETH_CELO = new Token(
   'ETH',
   'Portal Ether'
 )
-export const CMC02_CELO = new Token(
+export const WBTC_CELO = new Token(
   ChainId.CELO,
-  '0x32A9FE697a32135BFd313a6Ac28792DaE4D9979d',
+  '0xd71Ffd0940c920786eC4DbB5A12306669b5b81EF',
   18,
-  'cMCO2',
-  'Celo Moss Carbon Credit'
+  'WBTC',
+  'Wrapped BTC'
 )
 const CELO_CELO_ALFAJORES = new Token(
   ChainId.CELO_ALFAJORES,
@@ -260,6 +267,8 @@ export const ARB = new Token(ChainId.ARBITRUM_ONE, '0x912CE59144191C1204E64559FE
 
 export const OP = new Token(ChainId.OPTIMISM, '0x4200000000000000000000000000000000000042', 18, 'OP', 'Optimism')
 
+export const LDO = new Token(ChainId.MAINNET, '0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32', 18, 'LDO', 'Lido DAO Token')
+
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {
   ...(WETH9 as Record<ChainId, Token>),
   [ChainId.OPTIMISM]: new Token(
@@ -277,13 +286,6 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'Wrapped Ether'
   ),
   [ChainId.BASE]: new Token(ChainId.BASE, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.BASE_GOERLI]: new Token(
-    ChainId.BASE_GOERLI,
-    '0x4200000000000000000000000000000000000006',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
   [ChainId.ARBITRUM_ONE]: new Token(
     ChainId.ARBITRUM_ONE,
     '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',

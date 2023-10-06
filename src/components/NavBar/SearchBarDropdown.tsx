@@ -20,7 +20,7 @@ import { GenieCollection, TrendingCollection } from 'nft/types'
 import { useEffect, useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components'
-import { ThemedText } from 'theme'
+import { ThemedText } from 'theme/components'
 
 import { ClockIcon, TrendingArrow } from '../../nft/components/icons'
 import { SuspendConditionally } from '../Suspense/SuspendConditionally'
@@ -284,7 +284,7 @@ function SearchBarDropdownContents({
           suggestion_type: NavBarSearchTypes.COLLECTION_SUGGESTION,
           ...eventProperties,
         }}
-        header={<Trans>NFT Collections</Trans>}
+        header={<Trans>NFT collections</Trans>}
       />
     ) : (
       <Box className={styles.notFoundContainer}>No NFT collections found.</Box>
@@ -362,8 +362,6 @@ function SearchBarDropdownContents({
 
 function ComingSoonText({ chainId }: { chainId: ChainId }) {
   switch (chainId) {
-    case ChainId.BNB:
-      return <Trans>Coming soon: search and explore tokens on BNB Chain</Trans>
     case ChainId.AVALANCHE:
       return <Trans>Coming soon: search and explore tokens on Avalanche Chain</Trans>
     default:

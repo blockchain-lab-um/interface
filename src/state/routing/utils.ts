@@ -1,14 +1,9 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { MixedRouteSDK } from '@uniswap/router-sdk'
-import { ChainId, Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
-import { AlphaRouter } from '@uniswap/smart-order-router'
+import { Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
 import { DutchOrderInfo, DutchOrderInfoJSON } from '@uniswap/uniswapx-sdk'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
 import { FeeAmount, Pool, Route as V3Route } from '@uniswap/v3-sdk'
-import { asSupportedChain } from 'constants/chains'
-import { ZERO_PERCENT } from 'constants/misc'
-import { RPC_PROVIDERS } from 'constants/providers'
-import { getInputTax, getOutputTax } from 'constants/tax'
 import { isAvalanche, isBsc, isMatic, nativeOnChain } from 'constants/tokens'
 import { toSlippagePercent } from 'utils/slippage'
 
@@ -17,13 +12,17 @@ import {
   ClassicQuoteData,
   ClassicTrade,
   DutchOrderTrade,
+  GetQuickQuoteArgs,
   GetQuoteArgs,
   InterfaceTrade,
   isClassicQuoteResponse,
   PoolType,
+  PreviewTrade,
+  QuickRouteResponse,
   QuoteMethod,
   QuoteState,
   RouterPreference,
+  SubmittableTrade,
   SwapRouterNativeAssets,
   TradeFillType,
   TradeResult,
@@ -39,22 +38,6 @@ interface RouteResult {
   mixedRoute: MixedRouteSDK<Currency, Currency> | null
   inputAmount: CurrencyAmount<Currency>
   outputAmount: CurrencyAmount<Currency>
-}
-
-const routers = new Map<ChainId, AlphaRouter>()
-export function getRouter(chainId: ChainId): AlphaRouter {
-  const router = routers.get(chainId)
-  if (router) return router
-
-  const supportedChainId = asSupportedChain(chainId)
-  if (supportedChainId) {
-    const provider = RPC_PROVIDERS[supportedChainId]
-    const router = new AlphaRouter({ chainId, provider })
-    routers.set(chainId, router)
-    return router
-  }
-
-  throw new Error(`Router does not support this chain (chainId: ${chainId}).`)
 }
 
 /**
@@ -135,7 +118,7 @@ function toDutchOrderInfo(orderInfoJSON: DutchOrderInfoJSON): DutchOrderInfo {
 // Prepares the currencies used for the actual Swap (either UniswapX or Universal Router)
 // May not match `currencyIn` that the user selected because for ETH inputs in UniswapX, the actual
 // swap will use WETH.
-function getTradeCurrencies(args: GetQuoteArgs, isUniswapXTrade: boolean): [Currency, Currency] {
+function getTradeCurrencies(args: GetQuoteArgs | GetQuickQuoteArgs, isUniswapXTrade: boolean): [Currency, Currency] {
   const {
     tokenInAddress,
     tokenInChainId,
@@ -189,16 +172,36 @@ function getClassicTradeDetails(
   }
 }
 
+export function transformQuickRouteToTrade(args: GetQuickQuoteArgs, data: QuickRouteResponse): PreviewTrade {
+  const { amount, tradeType, inputTax, outputTax } = args
+  const [currencyIn, currencyOut] = getTradeCurrencies(args, false)
+  const [rawAmountIn, rawAmountOut] =
+    data.tradeType === 'EXACT_IN' ? [amount, data.quote.amount] : [data.quote.amount, amount]
+  const inputAmount = CurrencyAmount.fromRawAmount(currencyIn, rawAmountIn)
+  const outputAmount = CurrencyAmount.fromRawAmount(currencyOut, rawAmountOut)
+
+  return new PreviewTrade({ inputAmount, outputAmount, tradeType, inputTax, outputTax })
+}
+
 export async function transformRoutesToTrade(
   args: GetQuoteArgs,
   data: URAQuoteResponse,
   quoteMethod: QuoteMethod
 ): Promise<TradeResult> {
-  const { tradeType, needsWrapIfUniswapX, routerPreference, account, amount } = args
+  const {
+    tradeType,
+    needsWrapIfUniswapX,
+    routerPreference,
+    account,
+    amount,
+    isUniswapXDefaultEnabled,
+    inputTax,
+    outputTax,
+  } = args
 
-  // During the opt-in period, only return UniswapX quotes if the user has turned on the setting,
-  // even if it is the better quote.
-  const showUniswapXTrade = data.routing === URAQuoteType.DUTCH_LIMIT && routerPreference === RouterPreference.X
+  const showUniswapXTrade =
+    data.routing === URAQuoteType.DUTCH_LIMIT &&
+    (routerPreference === RouterPreference.X || (isUniswapXDefaultEnabled && routerPreference === RouterPreference.API))
 
   const [currencyIn, currencyOut] = getTradeCurrencies(args, showUniswapXTrade)
   const { gasUseEstimateUSD, blockNumber, routes, gasUseEstimate } = getClassicTradeDetails(
@@ -214,9 +217,6 @@ export async function transformRoutesToTrade(
   const usdCostPerGas = gasUseEstimateUSD && gasUseEstimate ? gasUseEstimateUSD / gasUseEstimate : undefined
 
   const approveInfo = await getApproveInfo(account, currencyIn, amount, usdCostPerGas)
-
-  const inputTax = args.fotAdjustmentsEnabled ? getInputTax(currencyIn) : ZERO_PERCENT
-  const outputTax = args.fotAdjustmentsEnabled ? getOutputTax(currencyOut) : ZERO_PERCENT
 
   const classicTrade = new ClassicTrade({
     v2Routes:
@@ -258,7 +258,7 @@ export async function transformRoutesToTrade(
 
   // During the opt-in period, only return UniswapX quotes if the user has turned on the setting,
   // even if it is the better quote.
-  if (isUniswapXBetter && args.routerPreference === RouterPreference.X) {
+  if (isUniswapXBetter && (routerPreference === RouterPreference.X || isUniswapXDefaultEnabled)) {
     const orderInfo = toDutchOrderInfo(data.quote.orderInfo)
     const wrapInfo = await getWrapInfo(needsWrapIfUniswapX, account, currencyIn.chainId, amount, usdCostPerGas)
 
@@ -273,6 +273,7 @@ export async function transformRoutesToTrade(
       wrapInfo,
       approveInfo,
       auctionPeriodSecs: data.quote.auctionPeriodSecs,
+      startTimeBufferSecs: data.quote.startTimeBufferSecs,
       deadlineBufferSecs: data.quote.deadlineBufferSecs,
       slippageTolerance: toSlippagePercent(data.quote.slippageTolerance),
     })
@@ -327,25 +328,18 @@ export function isClassicTrade(trade?: InterfaceTrade): trade is ClassicTrade {
   return trade?.fillType === TradeFillType.Classic
 }
 
+export function isPreviewTrade(trade?: InterfaceTrade): trade is PreviewTrade {
+  return trade?.fillType === TradeFillType.None
+}
+
+export function isSubmittableTrade(trade?: InterfaceTrade): trade is SubmittableTrade {
+  return trade?.fillType === TradeFillType.Classic || trade?.fillType === TradeFillType.UniswapX
+}
+
 export function isUniswapXTrade(trade?: InterfaceTrade): trade is DutchOrderTrade {
   return trade?.fillType === TradeFillType.UniswapX
 }
 
 export function shouldUseAPIRouter(args: GetQuoteArgs): boolean {
   return args.routerPreference !== RouterPreference.CLIENT
-}
-
-export function getTransactionCount(trade: InterfaceTrade): number {
-  let count = 0
-  if (trade.approveInfo.needsApprove) {
-    count++ // approval step, which can happen in both classic and uniswapx
-  }
-  if (isUniswapXTrade(trade)) {
-    if (trade.wrapInfo.needsWrap) {
-      count++ // wrapping step for uniswapx
-    }
-  } else {
-    count++ // classic onchain swap
-  }
-  return count
 }

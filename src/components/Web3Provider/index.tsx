@@ -2,12 +2,12 @@ import { enableMasca, isError } from '@blockchain-lab-um/masca-connector'
 import { CustomUserProperties, InterfaceEventName, WalletConnectionResult } from '@uniswap/analytics-events'
 import { useWeb3React, Web3ReactHooks, Web3ReactProvider } from '@web3-react/core'
 import { Connector } from '@web3-react/types'
-import { sendAnalyticsEvent, user } from 'analytics'
+import { sendAnalyticsEvent, user, useTrace } from 'analytics'
 import { connections, getConnection } from 'connection'
 import { isSupportedChain } from 'constants/chains'
-import { RPC_PROVIDERS } from 'constants/providers'
+import { DEPRECATED_RPC_PROVIDERS, RPC_PROVIDERS } from 'constants/providers'
+import { useFallbackProviderEnabled } from 'featureFlags/flags/fallbackProvider'
 import { TraceJsonRpcVariant, useTraceJsonRpcFlag } from 'featureFlags/flags/traceJsonRpc'
-import useEagerlyConnect from 'hooks/useEagerlyConnect'
 import usePrevious from 'hooks/usePrevious'
 import { ReactNode, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -17,7 +17,6 @@ import { getCurrentPageFromLocation } from 'utils/urlRoutes'
 import { getWalletMeta } from 'utils/walletMeta'
 
 export default function Web3Provider({ children }: { children: ReactNode }) {
-  useEagerlyConnect()
   const connectors = connections.map<[Connector, Web3ReactHooks]>(({ hooks, connector }) => [connector, hooks])
 
   return (
@@ -38,9 +37,12 @@ function Updater() {
     setEnabled: state.changeIsEnabled,
   }))
   const currentPage = getCurrentPageFromLocation(pathname)
+  const analyticsContext = useTrace()
+
+  const providers = useFallbackProviderEnabled() ? RPC_PROVIDERS : DEPRECATED_RPC_PROVIDERS
 
   // Trace RPC calls (for debugging).
-  const networkProvider = isSupportedChain(chainId) ? RPC_PROVIDERS[chainId] : undefined
+  const networkProvider = isSupportedChain(chainId) ? providers[chainId] : undefined
   const shouldTrace = useTraceJsonRpcFlag() === TraceJsonRpcVariant.Enabled
   useEffect(() => {
     if (shouldTrace) {
@@ -53,7 +55,22 @@ function Updater() {
       provider?.off('debug', trace)
       networkProvider?.off('debug', trace)
     }
-  }, [networkProvider, provider, shouldTrace])
+  }, [analyticsContext, networkProvider, provider, shouldTrace])
+
+  const previousConnectedChainId = usePrevious(chainId)
+  useEffect(() => {
+    const chainChanged = previousConnectedChainId && previousConnectedChainId !== chainId
+    if (chainChanged) {
+      sendAnalyticsEvent(InterfaceEventName.CHAIN_CHANGED, {
+        result: WalletConnectionResult.SUCCEEDED,
+        wallet_address: account,
+        wallet_type: getConnection(connector).getName(),
+        chain_id: chainId,
+        previousConnectedChainId,
+        page: currentPage,
+      })
+    }
+  }, [account, chainId, connector, currentPage, previousConnectedChainId])
 
   useEffect(() => {
     const initMasca = async () => {
@@ -91,17 +108,28 @@ function Updater() {
         (wallet) => wallet.account === account && wallet.walletType === walletType
       )
 
+      provider
+        ?.send('web3_clientVersion', [])
+        .then((clientVersion) => {
+          user.set(CustomUserProperties.WALLET_VERSION, clientVersion)
+        })
+        .catch((error) => {
+          console.warn('Failed to get client version', error)
+        })
+
       // User properties *must* be set before sending corresponding event properties,
       // so that the event contains the correct and up-to-date user properties.
       user.set(CustomUserProperties.WALLET_ADDRESS, account)
+      user.postInsert(CustomUserProperties.ALL_WALLET_ADDRESSES_CONNECTED, account)
+
       user.set(CustomUserProperties.WALLET_TYPE, walletType)
       user.set(CustomUserProperties.PEER_WALLET_AGENT, peerWalletAgent ?? '')
       if (chainId) {
+        user.set(CustomUserProperties.CHAIN_ID, chainId)
         user.postInsert(CustomUserProperties.ALL_WALLET_CHAIN_IDS, chainId)
       }
-      user.postInsert(CustomUserProperties.ALL_WALLET_ADDRESSES_CONNECTED, account)
 
-      sendAnalyticsEvent(InterfaceEventName.WALLET_CONNECT_TXN_COMPLETED, {
+      sendAnalyticsEvent(InterfaceEventName.WALLET_CONNECTED, {
         result: WalletConnectionResult.SUCCEEDED,
         wallet_address: account,
         wallet_type: walletType,

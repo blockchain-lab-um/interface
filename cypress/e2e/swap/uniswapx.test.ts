@@ -1,4 +1,5 @@
 import { ChainId, CurrencyAmount } from '@uniswap/sdk-core'
+import { FeatureFlag } from 'featureFlags'
 
 import { DAI, nativeOnChain, USDC_MAINNET } from '../../../src/constants/tokens'
 import { getTestSelector } from '../../utils'
@@ -26,7 +27,9 @@ function stubSwapTxReceipt() {
 describe('UniswapX Toggle', () => {
   beforeEach(() => {
     cy.intercept(QuoteEndpoint, { fixture: QuoteWhereUniswapXIsBetter })
-    cy.visit(`/swap/?inputCurrency=${USDC_MAINNET.address}&outputCurrency=${DAI.address}`)
+    cy.visit(`/swap/?inputCurrency=${USDC_MAINNET.address}&outputCurrency=${DAI.address}`, {
+      featureFlags: [{ name: FeatureFlag.uniswapXDefaultEnabled, value: false }],
+    })
   })
 
   it('only displays uniswapx ui when setting is on', () => {
@@ -76,12 +79,33 @@ describe('UniswapX Orders', () => {
     stubSwapTxReceipt()
 
     cy.hardhat().then((hardhat) => hardhat.fund(hardhat.wallet, CurrencyAmount.fromRawAmount(USDC_MAINNET, 3e8)))
-    cy.visit(`/swap/?inputCurrency=${USDC_MAINNET.address}&outputCurrency=${DAI.address}`)
+    cy.visit(`/swap/?inputCurrency=${USDC_MAINNET.address}&outputCurrency=${DAI.address}`, {
+      featureFlags: [{ name: FeatureFlag.uniswapXDefaultEnabled, value: false }],
+    })
   })
 
-  it('can swap using uniswapX', () => {
+  it('can swap exact-in trades using uniswapX', () => {
     // Setup a swap
     cy.get('#swap-currency-input .token-amount-input').type('300')
+    cy.contains('Try it now').click()
+
+    // Submit uniswapx order signature
+    cy.get('#swap-button').click()
+    cy.contains('Confirm swap').click()
+    cy.wait('@eth_signTypedData_v4')
+    cy.contains('Swap submitted')
+    cy.contains('Learn more about swapping with UniswapX')
+
+    // Return filled order status from uniswapx api
+    cy.intercept(OrderStatusEndpoint, { fixture: 'uniswapx/filledStatusResponse.json' })
+
+    // Verify swap success
+    cy.contains('Swapped')
+  })
+
+  it('can swap exact-out trades using uniswapX', () => {
+    // Setup a swap
+    cy.get('#swap-currency-output .token-amount-input').type('300')
     cy.contains('Try it now').click()
 
     // Submit uniswapx order signature
@@ -145,7 +169,9 @@ describe('UniswapX Eth Input', () => {
 
     stubSwapTxReceipt()
 
-    cy.visit(`/swap/?inputCurrency=ETH&outputCurrency=${DAI.address}`)
+    cy.visit(`/swap/?inputCurrency=ETH&outputCurrency=${DAI.address}`, {
+      featureFlags: [{ name: FeatureFlag.uniswapXDefaultEnabled, value: false }],
+    })
   })
 
   it('can swap using uniswapX with ETH as input', () => {
@@ -230,7 +256,9 @@ describe('UniswapX activity history', () => {
     cy.hardhat().then(async (hardhat) => {
       await hardhat.fund(hardhat.wallet, CurrencyAmount.fromRawAmount(USDC_MAINNET, 3e8))
     })
-    cy.visit(`/swap/?inputCurrency=${USDC_MAINNET.address}&outputCurrency=${DAI.address}`)
+    cy.visit(`/swap/?inputCurrency=${USDC_MAINNET.address}&outputCurrency=${DAI.address}`, {
+      featureFlags: [{ name: FeatureFlag.uniswapXDefaultEnabled, value: false }],
+    })
   })
 
   it('can view UniswapX order status progress in activity', () => {

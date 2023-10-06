@@ -9,12 +9,12 @@ import Row, { AutoRow } from 'components/Row'
 import { useTokenInfoFromActiveList } from 'hooks/useTokenInfoFromActiveList'
 import { Box } from 'rebass'
 import styled from 'styled-components'
-import { ThemedText } from 'theme'
+import { ThemedText } from 'theme/components'
 import { Z_INDEX } from 'theme/zIndex'
 import { RoutingDiagramEntry } from 'utils/getRoutingDiagramEntries'
 
 import { ReactComponent as DotLine } from '../../assets/svg/dot_line.svg'
-import { MouseoverTooltip } from '../Tooltip'
+import { MouseoverTooltip, TooltipSize } from '../Tooltip'
 
 const Wrapper = styled(Box)`
   align-items: center;
@@ -142,6 +142,7 @@ function Pool({ currency0, currency1, feeAmount }: { currency0: Currency; curren
   return (
     <MouseoverTooltip
       text={<Trans>{tokenInfo0?.symbol + '/' + tokenInfo1?.symbol + ' ' + feeAmount / 10000}% pool</Trans>}
+      size={TooltipSize.ExtraSmall}
     >
       <PoolBadge>
         <Box margin="0 4px 0 12px">

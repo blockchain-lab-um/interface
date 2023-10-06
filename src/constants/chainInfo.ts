@@ -23,6 +23,18 @@ import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLA
 
 export const AVERAGE_L1_BLOCK_TIME = ms(`12s`)
 
+// The block number at which v3 was deployed on each chain, separate from the UNIVERSAL_ROUTER_CREATION_BLOCK
+export const START_BLOCKS: { [key: number]: number } = {
+  [ChainId.MAINNET]: 14292820,
+  [ChainId.POLYGON]: 25459720,
+  [ChainId.ARBITRUM_ONE]: 175,
+  [ChainId.OPTIMISM]: 10028767,
+  [ChainId.CELO]: 13916355,
+  [ChainId.BNB]: 26324014,
+  [ChainId.AVALANCHE]: 31422450,
+  [ChainId.BASE]: 1371680,
+}
+
 export enum NetworkType {
   L1,
   L2,
@@ -257,22 +269,6 @@ const CHAIN_INFO: ChainInfoMap = {
     circleLogoUrl: baseLogo,
     squareLogoUrl: baseSquareLogo,
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-    color: darkTheme.chain_84531,
-  },
-  [ChainId.BASE_GOERLI]: {
-    networkType: NetworkType.L2,
-    blockWaitMsBeforeWarning: ms(`25m`),
-    bridge: 'https://goerli-bridge.base.org/deposit',
-    defaultListUrl: BASE_LIST,
-    docs: 'https://docs.base.org',
-    explorer: 'https://goerli.basescan.org/',
-    infoLink: 'https://info.uniswap.org/#/base/', // base testnet not supported
-    label: 'Base Goerli',
-    logoUrl: baseLogo,
-    statusPage: 'https://status.base.org/',
-    circleLogoUrl: baseLogo,
-    squareLogoUrl: baseSquareLogo,
-    nativeCurrency: { name: 'Base Goerli Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_84531,
   },
 } as const

@@ -40,14 +40,14 @@ export const ThemedText = {
   Hero(props: TextProps) {
     return <TextWrapper fontWeight={485} fontSize={48} color="neutral1" {...props} />
   },
-  LabelMedium(props: TextProps) {
-    return <TextWrapper fontWeight={500} fontSize={16} color="textPrimary" lineHeight="20px" {...props} />
-  },
   LabelSmall(props: TextProps) {
     return <TextWrapper fontWeight={485} fontSize={14} color="neutral2" {...props} />
   },
   LabelMicro(props: TextProps) {
     return <TextWrapper fontWeight={485} fontSize={12} color="neutral2" {...props} />
+  },
+  Caption(props: TextProps) {
+    return <TextWrapper fontWeight={485} fontSize={12} lineHeight="16px" color="neutral1" {...props} />
   },
   Link(props: TextProps) {
     return <TextWrapper fontWeight={485} fontSize={14} color="accent1" {...props} />
