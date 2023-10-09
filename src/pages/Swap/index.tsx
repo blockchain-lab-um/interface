@@ -479,8 +479,32 @@ export function Swap({
 
   const handleAuthorization = useCallback(async () => {
     setShowAuthenticationModal(true)
-    const kycEndpoint = 'https://verifier-v2.polygonid.me/api/sign-in?type=kycSig'
-    const response = await fetch(kycEndpoint)
+    const requestBody = {
+      // circuitId: 'credentialAtomicQueryMTPV2',
+      circuitId: 'credentialAtomicQuerySigV2',
+      id: 1,
+      query: {
+        allowedIssuers: ['did:polygonid:polygon:main:2q5Pyn8q8GKKAy8fKQjMe9ADjSQD69tWTUW3aJRhuv'],
+        context:
+          'https://raw.githubusercontent.com/reputex/polygon-id-credential-schemas/main/ReputeXUniswapCredibilityCredential/ReputeXUniswapCredibilityCredential.jsonld',
+        credentialSubject: {
+          hodlScore: {
+            $lt: 1,
+          },
+        },
+        skipClaimRevocationCheck: true,
+        type: 'ReputeXUniswapCredibilityCredential',
+      },
+    }
+
+    const kycEndpoint = 'https://verifier-v2.polygonid.me/api/sign-in?type=custom'
+    const response = await fetch(kycEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    })
     const authorizationRequestObject = await response.json()
 
     if (!mascaApi) throw new Error('Masca API is not defined')
@@ -491,15 +515,15 @@ export function Swap({
     if (selectedMethodResult.data !== 'did:polygonid') {
       await mascaApi?.switchDIDMethod('did:polygonid')
       // TODO: optional error handling with isError can come here, not neccessary-
-      // due to only supported method is did:polygonid
+      // due to only supported method being did:polygonid
     }
-    await selectChain(ChainId.POLYGON_MUMBAI)
+    await selectChain(ChainId.POLYGON)
     const authorizationRequest = JSON.stringify(authorizationRequestObject)
     const authResult = await mascaApi?.handleAuthorizationRequest({
       authorizationRequest,
     })
     if (!authResult.success) {
-      console.error(authResult.error)
+      console.error(authResult)
       setShowAuthenticationModal(false)
       return
     }
