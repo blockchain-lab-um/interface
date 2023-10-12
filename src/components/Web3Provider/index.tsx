@@ -83,7 +83,9 @@ function Updater() {
       }
       const mascaResult = await enableMasca((account as string).toLowerCase(), {
         snapId: 'npm:@blockchain-lab-um/masca',
-        version: '1.0.0-beta.2',
+        // snapId: 'local:http://localhost:8081',
+        // version: 'v1.0.0-beta.5',
+        version: 'v1.0.0',
         supportedMethods: ['did:polygonid'],
       })
       if (isError(mascaResult)) {
