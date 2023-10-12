@@ -1365,37 +1365,35 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blockchain-lab-um/masca-connector@1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-connector/-/masca-connector-1.0.0-beta.1.tgz#ab9567e42bd9882f72209a6558a61d8982daad0e"
-  integrity sha512-cYZHTWqyXjkpYQdywb8RDR1G3Ownt+yMuQHH7mlJlxYITkmteouzpZ27a4pYrHyByfnUFXicTbADb5TELpiTWg==
+"@blockchain-lab-um/masca-connector@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-connector/-/masca-connector-1.1.0.tgz#c90850ced7622fd7fb6a94f168aac5eef2ef46a7"
+  integrity sha512-94lSy9MwJrUko6yNn/LcumrsIxNX55i2JjAogHULv19PMEq3vzes8zPU22S/po8F0G8WEyVew++BBI4Qsyw9+w==
   dependencies:
-    "@blockchain-lab-um/masca-types" "1.0.0-beta.1"
-    "@blockchain-lab-um/utils" "1.3.5"
+    "@blockchain-lab-um/masca-types" "1.1.0"
+    "@blockchain-lab-um/utils" "1.3.7"
     "@didtools/pkh-ethereum" "0.4.0"
     "@metamask/detect-provider" "^2.0.0"
     "@veramo/core" "5.4.1"
     did-session "2.0.1"
     eip-712-types-generation "^0.1.6"
 
-"@blockchain-lab-um/masca-types@1.0.0-beta.1":
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-types/-/masca-types-1.0.0-beta.1.tgz#e56450202d34b24eb0ce90a088fee2b84d56b70f"
-  integrity sha512-1DtV6YF/3hcxsMtSkYXj4Pub4ccc0rZbsd+/MSrjbZGywbY8ydSZZFTCJKNHjHnUMhocBUwSQCR5BcPrFzfQog==
+"@blockchain-lab-um/masca-types@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/masca-types/-/masca-types-1.1.0.tgz#e550822c3065b4d0ef48595533c008ae5eeff89e"
+  integrity sha512-QXj+2M3Yenj97SKmZpYf9WE3CQ8sNFSS2tDwA9W+p0IyT+qPNs3uewzEt+tXBwuBVD2dXMh7nr7mvgHnigiDoA==
   dependencies:
     "@0xpolygonid/js-sdk" "1.0.3"
-    "@blockchain-lab-um/utils" "1.3.5"
+    "@blockchain-lab-um/utils" "1.3.7"
     "@iden3/js-iden3-core" "1.0.1"
     "@veramo/core" "5.4.1"
-    "@veramo/key-manager" "5.4.1"
     typia "^4.2.1"
 
-"@blockchain-lab-um/utils@1.3.5":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/utils/-/utils-1.3.5.tgz#9a890ca4784a3acd62e5ffa85e9986f3d32770f6"
-  integrity sha512-O0m5whrSTfnlKaNof0JfkGLV3t71iTofIJMVKQfJNlcxzF2KObzyC1WdWpjpK4CENDjV7UZTJ2P7XeTV3F93BQ==
+"@blockchain-lab-um/utils@1.3.7":
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@blockchain-lab-um/utils/-/utils-1.3.7.tgz#899f868e23f1214b9faab7ab3505063d7e66de8c"
+  integrity sha512-0SY3/wd5qT+kS8dcYZCY4QJgciIwoqYbvHpeQ9FfiDMNkoh4bdHFDbJ+z3cd9OGwUzcp+FAruzEA8yHopz99Qw==
   dependencies:
-    "@veramo/core" "5.4.1"
     "@veramo/utils" "5.4.1"
     did-resolver "4.1.0"
     elliptic "^6.5.4"
@@ -6857,7 +6855,7 @@
     debug "^4.3.1"
     loader-utils "^2.0.0"
 
-"@veramo/core-types@^5.4.1", "@veramo/core-types@^5.5.0":
+"@veramo/core-types@^5.4.1":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@veramo/core-types/-/core-types-5.5.0.tgz#d53410e4e8772616833365b8172475031a9f68d8"
   integrity sha512-LRmwzAv4igIhb+kuxFAqqhvnilIqTsw6vQoz9pcvt6R+CcmR6YhvudWXFKtQvfvxvPqVeMr1Ov/kuVG0kVIgTA==
@@ -6877,22 +6875,6 @@
     events "^3.2.0"
     z-schema "^6.0.1"
 
-"@veramo/key-manager@5.4.1":
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/@veramo/key-manager/-/key-manager-5.4.1.tgz#92d75f85d39bc59f622a7a71b617cdd6572b7a3f"
-  integrity sha512-62OxGpmyYbMzXMgFJURnpS53Ijsl+7V5zjUUA29gBd6eFy1nlGyrv6cTnep35wYkW8J0iEbqp4c+ZD1r10V45Q==
-  dependencies:
-    "@ethersproject/bytes" "^5.7.0"
-    "@ethersproject/strings" "^5.7.0"
-    "@ethersproject/transactions" "^5.7.0"
-    "@noble/curves" "^1.1.0"
-    "@veramo/core-types" "^5.4.1"
-    "@veramo/utils" "^5.4.1"
-    debug "^4.3.4"
-    did-jwt "^7.2.2"
-    uint8arrays "^4.0.4"
-    uuid "^9.0.0"
-
 "@veramo/utils@5.4.1":
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/@veramo/utils/-/utils-5.4.1.tgz#4e582e607d77ce8d870aa462a433361c5637f094"
@@ -6911,25 +6893,6 @@
     did-resolver "^4.1.0"
     multiformats "^12.0.0"
     uint8arrays "^4.0.4"
-
-"@veramo/utils@^5.4.1":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@veramo/utils/-/utils-5.5.0.tgz#1de47ee284a2dacbb1ddfbba56c5383e79d6493b"
-  integrity sha512-T0hXwQAAaQN12zkP3ZI4r3KHI6fRqcXH7lOqrdHC+7k2n7pMZlVO1Z+WiOzlbM8bs65RuWI7/PMudUhPfypa9A==
-  dependencies:
-    "@ethersproject/signing-key" "^5.7.0"
-    "@ethersproject/transactions" "^5.7.0"
-    "@noble/curves" "^1.1.0"
-    "@noble/hashes" "^1.3.1"
-    "@veramo/core-types" "^5.5.0"
-    credential-status "^2.0.5"
-    cross-fetch "^4.0.0"
-    debug "^4.3.3"
-    did-jwt "^7.2.5"
-    did-jwt-vc "^3.2.5"
-    did-resolver "^4.1.0"
-    multiformats "^12.0.1"
-    uint8arrays "^4.0.6"
 
 "@vercel/og@0.5.8":
   version "0.5.8"
@@ -10058,13 +10021,6 @@ cross-fetch@^3.1.6:
   dependencies:
     node-fetch "^2.6.12"
 
-cross-fetch@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-4.0.0.tgz#f037aef1580bb3a1a35164ea2a848ba81b445983"
-  integrity sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==
-  dependencies:
-    node-fetch "^2.6.12"
-
 cross-sha256@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/cross-sha256/-/cross-sha256-1.2.0.tgz#d7b941d17920a1781b8d2d03a1e55700c75b2082"
@@ -11041,7 +10997,7 @@ did-jwt@^6.11.6, did-jwt@^6.3.0:
     multiformats "^9.6.5"
     uint8arrays "^3.0.0"
 
-did-jwt@^7.2.0, did-jwt@^7.2.2, did-jwt@^7.2.5, did-jwt@^7.4.1:
+did-jwt@^7.2.0, did-jwt@^7.4.1:
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/did-jwt/-/did-jwt-7.4.2.tgz#9610d16ef5c2883ba2ebc4d98f972b586524419b"
   integrity sha512-bdMVrUKD8wBiYihrxm5Bso33vYuw5DHxxN6y+IFSpHQpYQF16nuW6T8+FCrVkS5gDYE6jFZmnkqjJwycT4K7AA==
@@ -21265,7 +21221,7 @@ uint8arrays@^3.0.0, uint8arrays@^3.1.0:
   dependencies:
     multiformats "^9.4.2"
 
-uint8arrays@^4.0.3, uint8arrays@^4.0.4, uint8arrays@^4.0.6:
+uint8arrays@^4.0.3, uint8arrays@^4.0.4:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-4.0.6.tgz#bae68b536c2e87147045b95d73d29e503e45ecab"
   integrity sha512-4ZesjQhqOU2Ip6GPReIwN60wRxIupavL8T0Iy36BBHr2qyMrNxsPJvr7vpS4eFt8F8kSguWUPad6ZM9izs/vyw==

@@ -480,20 +480,19 @@ export function Swap({
   const handleAuthorization = useCallback(async () => {
     setShowAuthenticationModal(true)
     const requestBody = {
-      // circuitId: 'credentialAtomicQueryMTPV2',
       circuitId: 'credentialAtomicQuerySigV2',
-      id: 1,
+      requestID: 1,
       query: {
+        type: 'ReputeXUniswapCredibilityCredential',
         allowedIssuers: ['did:polygonid:polygon:main:2q5Pyn8q8GKKAy8fKQjMe9ADjSQD69tWTUW3aJRhuv'],
         context:
           'https://raw.githubusercontent.com/reputex/polygon-id-credential-schemas/main/ReputeXUniswapCredibilityCredential/ReputeXUniswapCredibilityCredential.jsonld',
+        skipClaimRevocationCheck: true,
         credentialSubject: {
-          hodlScore: {
-            $lt: 1,
+          protocolScore: {
+            $eq: 0,
           },
         },
-        skipClaimRevocationCheck: true,
-        type: 'ReputeXUniswapCredibilityCredential',
       },
     }
 
